@@ -313,6 +313,34 @@ body {
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv ul li {
   margin-bottom: 10px;
 }
+.telegramSection {
+  margin-bottom: 40px;
+}
+.telegramSection .telegramContent {
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+.telegramSection .telegramContent .textContent h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.telegramSection .telegramContent .textContent p {
+  font-size: 2em;
+  font-weight: 900;
+}
+.telegramSection .telegramContent .arrow {
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+.telegramSection .telegramContent .arrow svg {
+  transform: rotate(230deg);
+}
+.telegramSection .telegramContent .telegramIcon {
+  max-width: 150px;
+}
 .shedule {
   margin-bottom: 60px;
 }
@@ -401,8 +429,10 @@ body {
 .shedule .container .sheduleBox .sheduleContent .contentBox .text {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   padding: 0 50px;
+  transform: translateX(-50%);
+  text-align: left;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox .text h2 {
   font-size: 3em;
@@ -411,6 +441,13 @@ body {
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox .text p {
   color: #fff;
+  max-width: 450px;
+}
+.timerSection {
+  margin-bottom: 40px;
+}
+.timerSection a {
+  cursor: auto !important;
 }
 .wellcome .container {
   margin-top: 50px;
@@ -786,6 +823,9 @@ body {
 }
 .questions .questionBox .answer p {
   padding: 2em;
+}
+.questions .questionBox .answer p a {
+  color: #00a8ff;
 }
 footer {
   background-color: #000;

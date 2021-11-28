@@ -78,6 +78,15 @@
     }
   }
 
+  .telegramSection {
+    padding: 0 20px;
+
+    .telegramContent {
+      flex-wrap: no-wrap;
+      max-width: 100%;
+    }
+  }
+
   .wellcome {
     .container {
       .wellcome_text {
@@ -169,8 +178,6 @@
       padding: 20px;
       margin-bottom: 20px;
       text-align: center;
-
-      h2 {}
     }
 
     .our_projects_vid {
@@ -181,7 +188,7 @@
 
       .iframeBox {
         display: flex;
-      justify-content: center;
+        justify-content: center;
 
         iframe {
           display: inline-block;
@@ -204,8 +211,6 @@
 
           label {
             max-width: 100%;
-
-            >p {}
 
             >input {
               margin-bottom: 10px;
@@ -253,6 +258,17 @@
 
       &:hover {
         transform: translateY(40px) rotate(360deg) scale(3);
+      }
+    }
+  }
+
+  .telegramSection {
+    padding: 0 20px;
+
+    .telegramContent {
+      flex-wrap: wrap;
+      .arrow {
+        align-self: flex-start;
       }
     }
   }
@@ -574,6 +590,21 @@
         >span {
           font-size: 38px;
         }
+      }
+    }
+  }
+
+  .telegramSection {
+    .telegramContent {
+      .textContent {
+        text-align: center;
+      }
+      .arrow {
+        // max-width: 100px;
+        padding-right: 15px;
+      }
+      .telegramIcon {
+        max-width: 100px;
       }
     }
   }

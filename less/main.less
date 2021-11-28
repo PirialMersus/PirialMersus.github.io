@@ -347,6 +347,7 @@ body {
 }
 
 // reloading section
+
 .reloading {
   .container {
     .soulReloadingBlock {
@@ -394,6 +395,45 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+// telegram 
+
+.telegramSection {
+  margin-bottom: 40px;
+
+  .telegramContent {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    align-items: center;
+
+    .textContent {
+      h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 2em;
+        font-weight: 900;
+      }
+    }
+
+    .arrow {
+      align-self: flex-end;
+      padding-bottom: 20px;
+
+      svg {
+        transform: rotate(230deg);
+      }
+    }
+
+    .telegramIcon {
+      max-width: 150px;
     }
   }
 }
@@ -504,8 +544,10 @@ body {
           .text {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 50%;
             padding: 0 50px;
+            transform: translateX(-50%);
+            text-align: left;
 
             h2 {
               font-size: 3em;
@@ -515,11 +557,22 @@ body {
 
             p {
               color: #fff;
+              max-width: 450px;
             }
           }
         }
       }
     }
+  }
+}
+
+// timer
+
+.timerSection {
+  margin-bottom: 40px;
+
+  a {
+    cursor: auto !important;
   }
 }
 
@@ -954,6 +1007,7 @@ body {
 
         p {
           height: 100%;
+          
         }
       }
     }
@@ -996,6 +1050,9 @@ body {
 
       p {
         padding: 2em;
+        a {
+          color: #00a8ff;
+        }
       }
     }
   }

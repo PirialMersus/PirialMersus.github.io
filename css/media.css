@@ -44,6 +44,13 @@
   .site_header .site_logo:hover {
     transform: translateY(60px) rotate(360deg) scale(3.5);
   }
+  .telegramSection {
+    padding: 0 20px;
+  }
+  .telegramSection .telegramContent {
+    flex-wrap: no-wrap;
+    max-width: 100%;
+  }
   .wellcome .container .wellcome_text {
     max-width: 100%;
     padding: 20px;
@@ -150,6 +157,15 @@
   }
   .site_header .site_logo:hover {
     transform: translateY(40px) rotate(360deg) scale(3);
+  }
+  .telegramSection {
+    padding: 0 20px;
+  }
+  .telegramSection .telegramContent {
+    flex-wrap: wrap;
+  }
+  .telegramSection .telegramContent .arrow {
+    align-self: flex-start;
   }
   footer {
     padding: 20px;
@@ -372,6 +388,15 @@
   }
   .slider_container .wrp_text_appear #text_appear_3 > span {
     font-size: 38px;
+  }
+  .telegramSection .telegramContent .textContent {
+    text-align: center;
+  }
+  .telegramSection .telegramContent .arrow {
+    padding-right: 15px;
+  }
+  .telegramSection .telegramContent .telegramIcon {
+    max-width: 100px;
   }
   .our_projects .our_projects_text .btn_consultation {
     padding-left: 20px;
