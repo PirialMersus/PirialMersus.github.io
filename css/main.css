@@ -307,6 +307,12 @@ body {
   margin: 20px 0;
   border-radius: 5px;
 }
+.reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv ul {
   list-style-type: decimal;
 }
@@ -522,24 +528,26 @@ body {
 .gallery .container .btn_consultation p {
   line-height: 40px;
 }
-.our_teachers_text_column {
+.our_teachers_section {
+  background-color: #000;
+}
+.our_teachers_section .our_teachers {
+  background: none no-repeat scroll right top transparent;
+  background-image: url(../img/helen.jpg);
+  background-size: 60% auto;
+}
+.our_teachers_section .our_teachers .our_teachers_text_column {
   max-width: 40%;
   padding: 120px 0;
 }
-.our_teachers {
-  background: none no-repeat scroll right top transparent;
-  background-image: url(../img/helen.jpg);
-  background-color: #000;
-  background-size: 60% auto;
-}
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp h4 {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp h4 {
   display: inline-block;
   color: #fff;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .read_more {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .read_more {
   color: #fb2f2f;
   margin-left: 20px;
   font-weight: 700;
@@ -548,7 +556,7 @@ body {
   padding-right: 10px;
   position: relative;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .read_more:after {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .read_more:after {
   content: "";
   position: absolute;
   background-image: url("../img/icons/arrow-right.svg");
@@ -559,33 +567,33 @@ body {
   height: 10px;
   background-repeat: no-repeat;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links {
   max-width: 100%;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp {
   position: relative;
   cursor: pointer;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link {
   background-color: #fb2f2f;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link .p_number {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link .p_number {
   color: #fff;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link .p_text {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link .p_text {
   color: #fff;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_inner_link {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_inner_link {
   transform: translateX(100%);
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link {
   position: relative;
   z-index: 100;
   display: block;
   transition: all 0.3s ease;
   background-color: #000000;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_number {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_number {
   display: inline-block;
   color: #bdbdbd;
   font-size: 18px;
@@ -593,12 +601,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_text {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_text {
   display: inline-block;
   color: #bdbdbd;
   font-size: 18px;
 }
-.our_teachers .container .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_inner_link {
+.our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_inner_link {
   transition: all 0.4s ease;
   position: absolute;
   z-index: 5;

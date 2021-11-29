@@ -3,7 +3,6 @@
 var section_width = $(".wellcome").width();
 var container_width = $(".container").width();
 var section_text_procent = 0;
-var section_img_procent = 0;
 var $our_teachers_text_column = $(".our_teachers_text_column");
 var $wellcome_text = $(".wellcome_text");
 var $drop_modal_form = $(".drop_modal_form");
@@ -12,11 +11,8 @@ var $our_projects_text = $(".our_projects_text");
 var $our_projects_img = $(".our_projects_img");
 var $nav_bar = $(".nav_bar");
 var $site_header = $(".site_header");
-var $our_teachers_link = $(".our_teachers_link");
 var $click_menu_wrp = $(".click_menu_wrp");
-var $our_teachers = $(".our_teachers");
-var $questionH3 = $(".questionH3");
-var $questionBox = $(".questionBox");
+var $questionH3 = document.getElementsByClassName("questionH3");
 $(".background_slider").slider({
   animationSpeed: 900
 });
@@ -86,24 +82,6 @@ $(document).on("scroll", window, function () {
     }
   }
 });
-window.addEventListener("resize", function () {
-  section_width = $(".wellcome").width();
-
-  if (section_width > 1200) {
-    section_text_procent = (section_width / 100 * 40 - (section_width - container_width) / 2) * 100 / container_width;
-    $our_teachers_text_column.css("max-width", section_text_procent + "%");
-    $wellcome_text.css("max-width", section_text_procent + "%");
-    $wellcome_img.css("max-width", 100 - section_text_procent + "%");
-    $our_projects_text.css("max-width", section_text_procent + "%");
-    $our_projects_img.css("max-width", 100 - section_text_procent + "%");
-  } else {
-    $our_teachers_text_column.css("max-width", "100%");
-    $wellcome_text.css("max-width", "100%");
-    $wellcome_img.css("max-width", "100%");
-    $our_projects_text.css("max-width", "100%");
-    $our_projects_img.css("max-width", "100%");
-  }
-}, false);
 
 if (section_width > 1200) {
   section_text_procent = (section_width / 100 * 40 - (section_width - container_width) / 2) * 100 / container_width;
@@ -125,22 +103,20 @@ $click_menu_wrp.on("click touch", function () {
     $nav_bar.addClass("active");
   }
 });
-$questionH3.on("click touch", function () {
-  console.log($(this).next(".answer"));
-  var answer = $(this).next(".answer");
 
-  if (answer.style.maxHeight) {
-    answer.style.maxHeight = null;
-  } else {
-    answer.style.maxHeight = answer.scrollHeight + "px";
-  }
+for (var i = 0; i < $questionH3.length; i++) {
+  $questionH3[i].addEventListener("click", function () {
+    this.parentElement.classList.toggle("active");
+    var panel = this.nextElementSibling;
 
-  if ($(this.parentNode).hasClass("active")) {
-    $(this.parentNode).removeClass("active");
-  } else {
-    $(this.parentNode).addClass("active");
-  }
-});
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
 $(".btn_consultation").click(function () {
   $drop_modal_form.toggleClass("active");
 });

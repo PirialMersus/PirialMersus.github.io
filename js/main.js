@@ -12,7 +12,6 @@ var $site_header = $(".site_header");
 var $click_menu_wrp = $(".click_menu_wrp");
 var $questionH3 = document.getElementsByClassName("questionH3");
 
-
 $(".background_slider").slider({
   animationSpeed: 900,
 });
@@ -92,30 +91,6 @@ $(document).on("scroll", window, function () {
   }
 });
 
-window.addEventListener(
-  "resize",
-  function () {
-    section_width = $(".wellcome").width();
-    if (section_width > 1200) {
-      section_text_procent =
-        (((section_width / 100) * 40 - (section_width - container_width) / 2) *
-          100) /
-        container_width;
-      $our_teachers_text_column.css("max-width", section_text_procent + "%");
-      $wellcome_text.css("max-width", section_text_procent + "%");
-      $wellcome_img.css("max-width", 100 - section_text_procent + "%");
-      $our_projects_text.css("max-width", section_text_procent + "%");
-      $our_projects_img.css("max-width", 100 - section_text_procent + "%");
-    } else {
-      $our_teachers_text_column.css("max-width", "100%");
-      $wellcome_text.css("max-width", "100%");
-      $wellcome_img.css("max-width", "100%");
-      $our_projects_text.css("max-width", "100%");
-      $our_projects_img.css("max-width", "100%");
-    }
-  },
-  false
-);
 if (section_width > 1200) {
   section_text_procent =
     (((section_width / 100) * 40 - (section_width - container_width) / 2) *
@@ -142,7 +117,7 @@ $click_menu_wrp.on("click touch", function () {
 });
 
 for (let i = 0; i < $questionH3.length; i++) {
-  $questionH3[i].addEventListener("click", function() {
+  $questionH3[i].addEventListener("click", function () {
     this.parentElement.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
