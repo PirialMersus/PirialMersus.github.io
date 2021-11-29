@@ -1,9 +1,3 @@
-@media (max-width: 1240px) {
-  .wellcome_text {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-}
 @media (max-width: 1200px) {
   .drop_modal_form {
     padding: 10px;
@@ -51,28 +45,15 @@
     flex-wrap: no-wrap;
     max-width: 100%;
   }
-  .wellcome .container .wellcome_text {
-    max-width: 100%;
-    padding: 20px;
-  }
-  .wellcome .container .wellcome_text .wellcome_text_p {
-    margin-bottom: 50px;
-  }
-  .wellcome .container .wellcome_text .btn_consultation p {
-    line-height: 40px;
-  }
-  .wellcome .container .wellcome_img {
-    padding: 20px;
-    max-width: 100%;
-  }
-  .wellcome .container .wellcome_img img {
-    width: 100%;
-  }
   .shedule {
     padding: 0 20px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 300px;
+    height: 200px;
+  }
+  .timerSection {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .gallery .galleryBox {
     padding: 0px 20px;
@@ -143,7 +124,10 @@
     padding: 0 20px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 350px;
+    height: 250px;
+  }
+  .shedule .container .sheduleBox .sheduleContent .contentBox .text {
+    padding: 0 20px;
   }
   .site_header ul li a {
     padding-right: 7px;
@@ -332,7 +316,10 @@
     padding: 0 20px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 450px;
+    height: 350px;
+  }
+  .shedule .container .sheduleBox .sheduleContent .contentBox .text {
+    padding: 0;
   }
   .container {
     max-width: 100%;
@@ -361,15 +348,6 @@
   }
   .our_services .container .our_services_text_column .our_services_text_column_inner_wrp .related_links .our_services_link_wrp .our_services_link .p_text {
     font-size: 14px;
-  }
-  .wellcome .container {
-    overflow: hidden;
-  }
-  .wellcome .container .wellcome_text {
-    max-width: 100%;
-  }
-  .wellcome .container .wellcome_text .btn_consultation p {
-    line-height: 40px;
   }
   .slider_container .wrp_text_appear {
     left: 15%;
@@ -413,5 +391,16 @@
   }
   footer .container .phone_mail_wrap .mail {
     font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  .telegramSection {
+    padding: 0 20px;
+  }
+  .telegramSection .telegramContent {
+    flex-wrap: wrap;
+  }
+  .telegramSection .telegramContent .arrow svg {
+    max-width: 50px;
   }
 }

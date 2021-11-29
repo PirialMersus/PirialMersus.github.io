@@ -342,7 +342,7 @@ body {
   max-width: 150px;
 }
 .shedule {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .shedule .container h2 {
   text-align: center;
@@ -353,7 +353,7 @@ body {
   transition: box-shadow 0.5s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
-  padding: 5px;
+  padding: 20px 5px 5px 5px;
   background-color: #000;
 }
 .shedule .container .sheduleBox:hover {
@@ -409,7 +409,7 @@ body {
 }
 .shedule .container .sheduleBox .sheduleContent {
   position: relative;
-  height: 200px;
+  height: 170px;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox {
   position: absolute;
@@ -445,6 +445,7 @@ body {
 }
 .timerSection {
   margin-bottom: 40px;
+  background-color: #000;
 }
 .timerSection a {
   cursor: auto !important;
