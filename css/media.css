@@ -166,13 +166,6 @@
   footer .container .copyright p {
     display: none;
   }
-  footer .container .nav_footer {
-    margin-bottom: 20px;
-  }
-  footer .container .location {
-    margin-bottom: 20px;
-    padding-left: 38px;
-  }
   footer .container .phone_mail_wrap .first_line {
     text-align: left;
   }
@@ -195,6 +188,15 @@
   .site_header ul li a {
     padding-right: 2px;
     padding-left: 2px;
+  }
+  .site_header .btn_consultation p {
+    font-size: 15px;
+  }
+  .questions .questionBox .questionH3 {
+    padding-right: 40px;
+  }
+  .questions .questionBox .questionH3 label:before {
+    right: -20px;
   }
 }
 @media (max-width: 600px) {
@@ -314,6 +316,21 @@
   }
   .shedule {
     padding: 0 20px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li {
+    width: 90px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li.backgroundSlide {
+    width: 90px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li:nth-child(1).active ~ .backgroundSlide {
+    left: 0;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li:nth-child(2).active ~ .backgroundSlide {
+    left: 90px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li:nth-child(3).active ~ .backgroundSlide {
+    left: 180px;
   }
   .shedule .container .sheduleBox .sheduleContent {
     height: 350px;

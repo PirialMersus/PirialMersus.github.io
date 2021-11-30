@@ -102,29 +102,31 @@
       padding: 0px 20px;
     }
   }
+
   .our_teachers_section {
     .our_teachers {
       padding: 20px;
       background: none;
       background-image: none;
-        .our_teachers_text_column {
-          max-width: 100%;
-          padding: 50px 0px;
 
-          .our_teachers_text_column_inner_wrp {
-            .related_links {
-              .our_teachers_link_wrp {
-                .our_teachers_link {
-                  background-color: transparent;
-                }
+      .our_teachers_text_column {
+        max-width: 100%;
+        padding: 50px 0px;
 
-                .our_teachers_inner_link {
-                  display: none;
-                }
+        .our_teachers_text_column_inner_wrp {
+          .related_links {
+            .our_teachers_link_wrp {
+              .our_teachers_link {
+                background-color: transparent;
+              }
+
+              .our_teachers_inner_link {
+                display: none;
               }
             }
           }
         }
+      }
     }
   }
 
@@ -222,6 +224,7 @@
     .btn_consultation {
       padding-left: 40px;
       padding-right: 40px;
+
     }
 
     .site_logo {
@@ -263,15 +266,6 @@
         }
       }
 
-      .nav_footer {
-        margin-bottom: 20px;
-      }
-
-      .location {
-        margin-bottom: 20px;
-        padding-left: 38px;
-      }
-
       .phone_mail_wrap {
         .first_line {
           text-align: left;
@@ -309,6 +303,25 @@
           padding-right: 2px;
           padding-left: 2px;
         }
+      }
+    }
+
+    .btn_consultation {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .questions {
+    .questionBox {
+      .questionH3 {
+          padding-right: 40px;
+          label {
+            &:before {
+              right: -20px;
+            }
+          }
       }
     }
   }
@@ -463,24 +476,46 @@
       }
     }
   }
+.shedule {
+  padding: 0 20px;
 
-  .shedule {
-    padding: 0 20px;
+  .container {
+    .sheduleBox {
+      .sheduleHeader {
+        li {
+          width: 90px;
 
-    .container {
-      .sheduleBox {
-        .sheduleContent {
-          height: 350px;
+          &.backgroundSlide {
+            width: 90px;
+          }
+          
+          &:nth-child(1).active~.backgroundSlide {
+            left: 0;
+          }
 
-          .contentBox {
-            .text {
-              padding: 0;
-            }
+          &:nth-child(2).active~.backgroundSlide {
+            left: 90px;
+          }
+
+          &:nth-child(3).active~.backgroundSlide {
+            left: 180px;
+          }
+        }
+      }
+
+      .sheduleContent {
+        height: 350px;
+
+        .contentBox {
+          .text {
+            padding: 0;
           }
         }
       }
     }
   }
+  }
+
   .timerSection {
     a {
       max-width: 80%;

@@ -144,6 +144,9 @@
   display: flex;
   justify-content: center;
 }
+.slider_container .slides_row .slide.alex {
+  background-position: right bottom;
+}
 .slider_container .slides_row .slide .sliderContent {
   display: inline-block;
   align-self: center;
@@ -232,4 +235,9 @@
 .slider_container .navigation .pointers.active p {
   font-size: 18px;
   color: #000;
+}
+@media (max-width: 600px) {
+  .slider_container .slides_row .slide.alex {
+    background-position: 75% 20%;
+  }
 }

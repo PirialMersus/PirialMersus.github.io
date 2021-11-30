@@ -134,7 +134,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #174aa3;
+  background-color: #112d5e;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -189,7 +189,7 @@ body {
   background-color: rgba(23, 74, 163, 0.4);
 }
 .site_header.scroll {
-  background-color: #174aa3;
+  background-color: #112d5e;
   border-bottom: 1px solid #000;
 }
 .site_header .site_logo {
@@ -244,7 +244,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #174aa3;
+  background-color: #112d5e;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -360,7 +360,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px 5px 5px 5px;
-  background-color: #174aa3;
+  background-color: #112d5e;
 }
 .shedule .container .sheduleBox:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
@@ -451,7 +451,7 @@ body {
 }
 .timerSection {
   margin-bottom: 40px;
-  background-color: #174aa3;
+  background-color: #112d5e;
   display: flex;
   justify-content: center;
 }
@@ -532,7 +532,7 @@ body {
   line-height: 40px;
 }
 .our_teachers_section {
-  background-color: #174aa3;
+  background-color: #112d5e;
 }
 .our_teachers_section .our_teachers {
   background: none no-repeat scroll right top transparent;
@@ -594,7 +594,7 @@ body {
   z-index: 100;
   display: block;
   transition: all 0.3s ease;
-  background-color: #174aa3;
+  background-color: #112d5e;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_number {
   display: inline-block;
@@ -802,7 +802,7 @@ body {
   height: 100%;
 }
 .questions .questionBox h3 {
-  background: #174aa3;
+  background: #112d5e;
   color: #fff;
   position: relative;
   padding-left: 20px;
@@ -840,7 +840,7 @@ body {
   color: #00a8ff;
 }
 footer {
-  background-color: #174aa3;
+  background-color: #112d5e;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -858,40 +858,6 @@ footer .container .copyright img {
 footer .container .copyright p {
   color: #958888;
   font-size: 12px;
-}
-footer .container .nav_footer > ul > li {
-  margin-bottom: 14px;
-}
-footer .container .nav_footer > ul > li > a {
-  transition: all 0.3s ease;
-  color: #ffffff;
-}
-footer .container .nav_footer > ul > li > a:hover {
-  color: #fb2f2f;
-}
-footer .container .nav_footer > ul li:last-child {
-  margin-bottom: 0px;
-}
-footer .container .location {
-  text-align: left;
-}
-footer .container .location ul {
-  display: inline-block;
-  position: relative;
-}
-footer .container .location ul li {
-  margin-bottom: 10px;
-}
-footer .container .location ul li > p {
-  color: #fff;
-  color: #958888;
-  font-size: 12px;
-}
-footer .container .location ul li > img {
-  position: absolute;
-  left: -40px;
-  width: 30px;
-  height: 30px;
 }
 footer .container .phone_mail_wrap {
   overflow: auto;
