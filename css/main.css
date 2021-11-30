@@ -376,6 +376,8 @@ body {
   list-style: none;
   width: 150px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .shedule .container .sheduleBox .sheduleHeader li a {
   display: block;
@@ -454,6 +456,7 @@ body {
   background-color: #112d5e;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 .timerSection a {
   cursor: auto !important;
