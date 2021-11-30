@@ -148,6 +148,9 @@
   .telegramSection .telegramContent {
     flex-wrap: wrap;
   }
+  .telegramSection .telegramContent .textContent {
+    width: 100%;
+  }
   .telegramSection .telegramContent .arrow {
     align-self: flex-start;
   }

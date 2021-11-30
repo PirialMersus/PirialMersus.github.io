@@ -242,6 +242,10 @@
     .telegramContent {
       flex-wrap: wrap;
 
+      .textContent {
+        width: 100%;
+      }
+
       .arrow {
         align-self: flex-start;
       }
@@ -312,16 +316,17 @@
       }
     }
   }
-  
+
   .questions {
     .questionBox {
       .questionH3 {
-          padding-right: 40px;
-          label {
-            &:before {
-              right: -20px;
-            }
+        padding-right: 40px;
+
+        label {
+          &:before {
+            right: -20px;
           }
+        }
       }
     }
   }
@@ -476,44 +481,45 @@
       }
     }
   }
-.shedule {
-  padding: 0 20px;
 
-  .container {
-    .sheduleBox {
-      .sheduleHeader {
-        li {
-          width: 90px;
+  .shedule {
+    padding: 0 20px;
 
-          &.backgroundSlide {
+    .container {
+      .sheduleBox {
+        .sheduleHeader {
+          li {
             width: 90px;
-          }
-          
-          &:nth-child(1).active~.backgroundSlide {
-            left: 0;
-          }
 
-          &:nth-child(2).active~.backgroundSlide {
-            left: 90px;
-          }
+            &.backgroundSlide {
+              width: 90px;
+            }
 
-          &:nth-child(3).active~.backgroundSlide {
-            left: 180px;
+            &:nth-child(1).active~.backgroundSlide {
+              left: 0;
+            }
+
+            &:nth-child(2).active~.backgroundSlide {
+              left: 90px;
+            }
+
+            &:nth-child(3).active~.backgroundSlide {
+              left: 180px;
+            }
           }
         }
-      }
 
-      .sheduleContent {
-        height: 350px;
+        .sheduleContent {
+          height: 350px;
 
-        .contentBox {
-          .text {
-            padding: 0;
+          .contentBox {
+            .text {
+              padding: 0;
+            }
           }
         }
       }
     }
-  }
   }
 
   .timerSection {

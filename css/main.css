@@ -278,7 +278,7 @@ body {
   font-size: 18px;
 }
 .reloading .container .soulReloadingBlock {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 .reloading .container .soulReloadingBlock h2 {
   text-align: center;
@@ -320,7 +320,7 @@ body {
   margin-bottom: 10px;
 }
 .telegramSection {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .telegramSection .telegramContent {
   max-width: 1080px;
@@ -348,7 +348,7 @@ body {
   max-width: 150px;
 }
 .shedule {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .shedule .container h2 {
   text-align: center;
@@ -450,7 +450,7 @@ body {
   max-width: 450px;
 }
 .timerSection {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   background-color: #112d5e;
   display: flex;
   justify-content: center;
@@ -496,7 +496,7 @@ body {
   margin-bottom: 20px;
 }
 .gallery {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .gallery .container {
   text-align: center;
@@ -533,6 +533,7 @@ body {
 }
 .our_teachers_section {
   background-color: #112d5e;
+  margin-bottom: 100px;
 }
 .our_teachers_section .our_teachers {
   background: none no-repeat scroll right top transparent;
@@ -624,7 +625,7 @@ body {
 }
 .our_projects {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -643,7 +644,7 @@ body {
   max-width: 60%;
 }
 .prices {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .prices h1 {
   text-align: center;
@@ -777,7 +778,7 @@ body {
   animation-delay: 1s;
 }
 .questions {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .questions h1 {
   text-align: center;
