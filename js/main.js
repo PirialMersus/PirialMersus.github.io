@@ -11,10 +11,16 @@ var $nav_bar = $(".nav_bar");
 var $site_header = $(".site_header");
 var $click_menu_wrp = $(".click_menu_wrp");
 var $questionH3 = document.getElementsByClassName("questionH3");
+var $btn_consultation_send_data = $(".btn_consultation_send_data");
+console.log($btn_consultation_send_data);
 
 $(".background_slider").slider({
   animationSpeed: 900,
 });
+
+(function () {
+  emailjs.init("user_bGtXPIUcyJP1RAgR0lXla");
+})();
 
 $("a.scroll-to").on("click", function (e) {
   e.preventDefault();
@@ -44,15 +50,8 @@ $(document).ready(function () {
         $links[j].className = "";
       }
       this.className = "active";
-      // $('.wellcome_img').css('max-width', (100 - section_text_procent) + '%');
-      // $('.our_teachers').css('background-image', 'url("../img/2.jpg"');
     });
   }
-
-  // $links.on('click', function () {
-  //     $(this).siblings().removeClass('active');
-  //     $(this).addClass('active');
-  // })
 });
 
 // client is thinking. To do this feature or not to do?
@@ -91,20 +90,20 @@ $(document).on("scroll", window, function () {
   }
 });
 
-if (section_width > 1200) {
-  section_text_procent =
-    (((section_width / 100) * 40 - (section_width - container_width) / 2) *
-      100) /
-    container_width;
-  $our_teachers_text_column.css("max-width", section_text_procent + "%");
-  $wellcome_text.css("max-width", section_text_procent + "%");
-  $wellcome_img.css("max-width", 100 - section_text_procent + "%");
-  $our_projects_text.css("max-width", section_text_procent + "%");
-  $our_projects_img.css("max-width", 100 - section_text_procent + "%");
-  // console.log('section_width = ', section_width);
-  // console.log('container_width = ', container_width);
-  // console.log('section_text_procent = ', section_text_procent);
-}
+// if (section_width > 1200) {
+//   section_text_procent =
+//     (((section_width / 100) * 40 - (section_width - container_width) / 2) *
+//       100) /
+//     container_width;
+//   $our_teachers_text_column.css("max-width", section_text_procent + "%");
+//   $wellcome_text.css("max-width", section_text_procent + "%");
+//   $wellcome_img.css("max-width", 100 - section_text_procent + "%");
+//   $our_projects_text.css("max-width", section_text_procent + "%");
+//   $our_projects_img.css("max-width", 100 - section_text_procent + "%");
+//   // console.log('section_width = ', section_width);
+//   // console.log('container_width = ', container_width);
+//   // console.log('section_text_procent = ', section_text_procent);
+// }
 
 $click_menu_wrp.on("click touch", function () {
   if ($(this).hasClass("active")) {
@@ -114,6 +113,17 @@ $click_menu_wrp.on("click touch", function () {
     $(this).addClass("active");
     $nav_bar.addClass("active");
   }
+});
+
+$btn_consultation_send_data.on("click touch", function () {
+  console.log("hello");
+  // if ($(this).hasClass("active")) {
+  //   $(this).removeClass("active");
+  //   $nav_bar.removeClass("active");
+  // } else {
+  //   $(this).addClass("active");
+  //   $nav_bar.addClass("active");
+  // }
 });
 
 for (let i = 0; i < $questionH3.length; i++) {

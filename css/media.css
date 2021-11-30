@@ -321,6 +321,9 @@
   .shedule .container .sheduleBox .sheduleContent .contentBox .text {
     padding: 0;
   }
+  .timerSection a {
+    max-width: 80%;
+  }
   .container {
     max-width: 100%;
   }

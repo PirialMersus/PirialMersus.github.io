@@ -134,7 +134,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #000;
+  background-color: #174aa3;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -186,10 +186,10 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #5f5a5a;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(23, 74, 163, 0.4);
 }
 .site_header.scroll {
-  background-color: #000000;
+  background-color: #174aa3;
   border-bottom: 1px solid #000;
 }
 .site_header .site_logo {
@@ -244,7 +244,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #000;
+  background-color: #174aa3;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -360,7 +360,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px 5px 5px 5px;
-  background-color: #000;
+  background-color: #174aa3;
 }
 .shedule .container .sheduleBox:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
@@ -451,10 +451,13 @@ body {
 }
 .timerSection {
   margin-bottom: 40px;
-  background-color: #000;
+  background-color: #174aa3;
+  display: flex;
+  justify-content: center;
 }
 .timerSection a {
   cursor: auto !important;
+  max-width: 60%;
 }
 .wellcome .container {
   margin-top: 50px;
@@ -529,7 +532,7 @@ body {
   line-height: 40px;
 }
 .our_teachers_section {
-  background-color: #000;
+  background-color: #174aa3;
 }
 .our_teachers_section .our_teachers {
   background: none no-repeat scroll right top transparent;
@@ -591,7 +594,7 @@ body {
   z-index: 100;
   display: block;
   transition: all 0.3s ease;
-  background-color: #000000;
+  background-color: #174aa3;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_number {
   display: inline-block;
@@ -799,7 +802,7 @@ body {
   height: 100%;
 }
 .questions .questionBox h3 {
-  background: #000000;
+  background: #174aa3;
   color: #fff;
   position: relative;
   padding-left: 20px;
@@ -837,7 +840,7 @@ body {
   color: #00a8ff;
 }
 footer {
-  background-color: #000;
+  background-color: #174aa3;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
