@@ -244,7 +244,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #112d5e;
+  background-color: #000;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -498,40 +498,73 @@ body {
   max-width: 60%;
   margin-bottom: 20px;
 }
-.gallery {
+.gallery_section {
   margin-bottom: 100px;
+  box-sizing: border-box;
+  background-color: #112d5e;
 }
-.gallery .container {
+.gallery_section .container {
   text-align: center;
-}
-.gallery .container .galleryBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  margin-bottom: 40px;
-}
-.gallery .container .galleryBox .box {
+  margin: auto;
   position: relative;
-  padding-bottom: 62.5%;
-  overflow: hidden;
 }
-.gallery .container .galleryBox .box img {
+.gallery_section .container .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.gallery_section .container .gallery .galleryBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+.gallery_section .container .gallery .galleryBox:hover {
+  animation-play-state: paused;
+}
+.gallery_section .container .gallery .galleryBox:hover h2 {
+  animation-play-state: paused;
+}
+.gallery_section .container .gallery .galleryBox h2 {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  color: #e7e7e7;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+  animation: animate3d 20s linear infinite;
+}
+.gallery_section .container .gallery .galleryBox span {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
   height: 100%;
-  transition: transform 0.5s;
+  width: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
-.gallery .container .galleryBox .box:hover img {
+.gallery_section .container .gallery .galleryBox span img {
+  image-rendering: auto;
+  transition: 0.3s all ease;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery_section .container .gallery .galleryBox span img:hover {
   transform: scale(1.2);
+  transition: 0.3s all ease;
 }
-.gallery .container .btn_consultation {
+.gallery_section .container .btn_consultation {
   display: inline-flex;
+  margin-bottom: 40px;
 }
-.gallery .container .btn_consultation p {
+.gallery_section .container .btn_consultation p {
   line-height: 40px;
 }
 .our_teachers_section {
@@ -921,6 +954,22 @@ footer .container .phone_mail_wrap .copyright_plus_insta .icons a img {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+@keyframes animate3d {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(-360deg);
   }
 }
 @keyframes animate1 {
