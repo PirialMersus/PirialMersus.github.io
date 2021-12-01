@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Tahoma";
+  font-family: "PT Sans";
 }
 h1,
 h2,
@@ -17,7 +17,6 @@ div,
 p {
   margin: 0;
   padding: 0;
-  font-family: "Tahoma";
   font-size: 14px;
   color: #000000;
   font-weight: 400;
@@ -513,9 +512,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
 }
 .gallery_section .container .gallery .galleryBox {
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
