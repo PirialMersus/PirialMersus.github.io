@@ -164,10 +164,11 @@
   font-weight: 700;
 }
 .slider_container .slides_row .slide .sliderContent h3 span:nth-child(1) {
-  color: #112d5e;
+  color: #fb2f2f;
 }
 .slider_container .slides_row .slide .sliderContent h3 span:nth-child(2) {
-  color: #fb2f2f;
+  color: #112d5e;
+  text-shadow: 1px 1px 2px black, 0 0 25px #fb2f2f, 0 0 5px #fb2f2f;
 }
 .slider_container .slides_row .slide .sliderContent h4 {
   padding: 0 10px;
