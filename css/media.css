@@ -77,27 +77,30 @@
     overflow: hidden;
   }
   .our_projects {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .our_projects .container {
     flex-wrap: wrap;
   }
-  .our_projects .our_projects_text {
+  .our_projects .container .our_projects_text {
     width: 100%;
     max-width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
   }
-  .our_projects .our_projects_vid {
+  .our_projects .container .our_projects_vid {
     width: 100%;
     max-width: 100%;
     display: flex;
     justify-content: center;
   }
-  .our_projects .our_projects_vid .iframeBox {
+  .our_projects .container .our_projects_vid .iframeBox {
     display: flex;
     justify-content: center;
   }
-  .our_projects .our_projects_vid .iframeBox iframe {
+  .our_projects .container .our_projects_vid .iframeBox iframe {
     display: inline-block;
     max-width: 100%;
     margin: 0 auto;

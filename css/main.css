@@ -46,7 +46,7 @@ body {
   left: 0;
   right: 0;
   z-index: 500;
-  background-image: url(../img/krasivie-gori-v-snegu-priroda-krasivo-foto-27.jpg);
+  background-image: url(../img/karpatian8.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -201,8 +201,9 @@ body {
 .site_header .site_logo:hover {
   transform: translateY(80px) rotate(360deg) scale(5);
 }
-.site_header ul li {
-  display: inline-block;
+.site_header ul {
+  display: flex;
+  list-style: none;
 }
 .site_header ul li a {
   padding: 0 10px;
@@ -296,15 +297,21 @@ body {
   margin-bottom: 20px;
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img {
-  display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
 }
-.reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img img {
-  height: 70px;
-  max-width: 100%;
-  margin: 20px 0;
-  border-radius: 5px;
+.reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img.img1 {
+  background-image: url(../img/icons/yoga-symbolism-buddha-tree.jpg);
+}
+.reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img.img2 {
+  background-image: url(../img/icons/beauty.jpg);
+}
+.reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img.img3 {
+  background-image: url(../img/girls.jpg);
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv h5 {
   text-align: center;
@@ -314,6 +321,7 @@ body {
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv ul {
   list-style-type: decimal;
+  padding-left: 15px;
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv ul li {
   margin-bottom: 10px;
@@ -355,19 +363,14 @@ body {
   margin-bottom: 20px;
 }
 .shedule .container .sheduleBox {
-  transition: box-shadow 0.5s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px 5px 5px 5px;
-  background-color: #112d5e;
-}
-.shedule .container .sheduleBox:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+  background-color: #f3f3f3;
 }
 .shedule .container .sheduleBox .sheduleHeader {
   display: inline-flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   overflow: hidden;
   position: relative;
 }
@@ -382,7 +385,7 @@ body {
   display: block;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  color: #000;
   transition: 0.5s;
   text-decoration: none;
   position: relative;
@@ -439,15 +442,15 @@ body {
   left: 50%;
   padding: 0 50px;
   transform: translateX(-50%);
-  text-align: left;
+  text-align: center;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox .text h2 {
   font-size: 3em;
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox .text p {
-  color: #fff;
+  color: #000;
   max-width: 450px;
 }
 .timerSection {
@@ -653,30 +656,35 @@ body {
   right: 0;
   top: 0;
   line-height: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #fff;
-  text-decoration: underline;
   color: #000;
 }
 .our_projects {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #112d5e;
+}
+.our_projects .container {
   display: flex;
   justify-content: space-between;
 }
-.our_projects .our_projects_text {
+.our_projects .container .our_projects_text {
   max-width: 34%;
 }
-.our_projects .our_projects_text h2 {
+.our_projects .container .our_projects_text h2 {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
+  color: #fff;
 }
-.our_projects .our_projects_text .btn_consultation p {
+.our_projects .container .our_projects_text .btn_consultation p {
   line-height: 40px;
 }
-.our_projects .our_projects_vid {
+.our_projects .container .our_projects_vid {
   max-width: 60%;
 }
 .prices {
@@ -851,7 +859,7 @@ body {
 .questions .questionBox h3 label::before {
   content: '↓';
   color: #fff;
-  font-size: 40px;
+  font-size: 25px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -909,6 +917,7 @@ footer .container .phone_mail_wrap .first_line .phone {
   display: inline-block;
   transition: all 0.3s ease;
   cursor: pointer;
+  font-weight: 700;
 }
 footer .container .phone_mail_wrap .first_line .phone:hover {
   color: #fb2f2f;

@@ -15,7 +15,6 @@ $.fn.slider = function (options) {
   var activeSlideCounter = 0;
   var offset = 0;
   var windowWidth = $(".slider_container").width();
-  console.log("window sizes", windowWidth);
   var slides = $(".slider_container .slides_row .slide").length;
   var endCount = slides - 1;
   var slideCount = slides;

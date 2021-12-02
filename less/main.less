@@ -1,7 +1,5 @@
 // out: ../css/style.css
-@primary: #00a8ff;
-@btns_color: #fb2f2f;
-@background_color: #112d5e;
+@import "commonStyles.less";
 
 html,
 body {
@@ -44,7 +42,7 @@ img {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: @backgroundColor;
 }
 
 .nav_bar {
@@ -60,7 +58,7 @@ body {
   left: 0;
   right: 0;
   z-index: 500;
-  background-image: url(../img/krasivie-gori-v-snegu-priroda-krasivo-foto-27.jpg);
+  background-image: url(../img/karpatian8.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +163,7 @@ body {
           padding-right: 50px;
           display: inline-block;
           cursor: pointer;
-          background-color: @background_color;
+          background-color: @sectionsBackgroundColor;
           position: relative;
           z-index: 4;
           transition: all 0.6s ease;
@@ -233,7 +231,7 @@ body {
   background-color: rgba(23, 74, 163, 0.4);
 
   &.scroll {
-    background-color: @background_color;
+    background-color: @sectionsBackgroundColor;
     border-bottom: 1px solid #000;
   }
 
@@ -250,9 +248,10 @@ body {
   }
 
   ul {
-    li {
-      display: inline-block;
+    display: flex;
+    list-style: none;
 
+    li {
       a {
         padding: 0 10px;
 
@@ -372,16 +371,36 @@ body {
           margin-bottom: 20px;
 
           .img {
-            display: flex;
-            justify-content: space-around;
-            vertical-align: middle;
+            width: 300px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 50px;
 
-            img {
-              height: 70px;
-              max-width: 100%;
-              margin: 20px 0;
-              border-radius: 5px;
+            &.img1 {
+              background-image: url(../img/icons/yoga-symbolism-buddha-tree.jpg);
             }
+
+            &.img2 {
+              background-image: url(../img/icons/beauty.jpg);
+
+            }
+
+            &.img3 {
+              background-image: url(../img/girls.jpg);
+            }
+
+            // display: flex;
+            // justify-content: space-around;
+            // vertical-align: middle;
+
+            // img {
+            //   height: 70px;
+            //   max-width: 100%;
+            //   margin: 20px 0;
+            //   border-radius: 5px;
+            // }
           }
 
           h5 {
@@ -393,9 +412,7 @@ body {
 
           ul {
             list-style-type: decimal;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
+            padding-left: 15px;
 
             li {
               margin-bottom: 10px;
@@ -459,20 +476,14 @@ body {
     }
 
     .sheduleBox {
-      transition: box-shadow 0.5s;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
       text-align: center;
       padding: 20px 5px 5px 5px;
-      background-color: @background_color;
-
-      &:hover {
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-      }
+      background-color: @backgroundColor;
 
       .sheduleHeader {
         display: inline-flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
 
         overflow: hidden;
         // box-shadow: 0 0 0 5px #333;
@@ -489,7 +500,7 @@ body {
             display: block;
             padding: 20px;
             text-align: center;
-            color: #fff;
+            color: #000;
             transition: 0.5s;
             text-decoration: none;
             position: relative;
@@ -557,16 +568,16 @@ body {
             left: 50%;
             padding: 0 50px;
             transform: translateX(-50%);
-            text-align: left;
+            text-align: center;
 
             h2 {
               font-size: 3em;
-              color: #fff;
+              color: #000;
               margin-bottom: 20px;
             }
 
             p {
-              color: #fff;
+              color: #000;
               max-width: 450px;
             }
           }
@@ -580,7 +591,7 @@ body {
 
 .timerSection {
   margin-bottom: 100px;
-  background-color: @background_color;
+  background-color: @sectionsBackgroundColor;
   display: flex;
   justify-content: center;
   padding: 50px 0;
@@ -645,7 +656,7 @@ body {
 .gallery_section {
   margin-bottom: 100px;
   box-sizing: border-box;
-  background-color: @background_color;
+  background-color: @sectionsBackgroundColor;
 
   .container {
     text-align: center;
@@ -717,9 +728,6 @@ body {
           -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 
           img {
-            // position: absolute;
-            // top: 0;
-            // left: 0;
             image-rendering: auto;
             transition: 0.3s all ease;
             height: 100%;
@@ -796,7 +804,7 @@ body {
 
 // our services
 .our_teachers_section {
-  background-color: @background_color;
+  background-color: @sectionsBackgroundColor;
   margin-bottom: 100px;
 
   .our_teachers {
@@ -869,7 +877,7 @@ body {
               z-index: 100;
               display: block;
               transition: all 0.3s ease;
-              background-color: @background_color;
+              background-color: @sectionsBackgroundColor;
 
               .p_number {
                 display: inline-block;
@@ -894,10 +902,9 @@ body {
               right: 0;
               top: 0;
               line-height: 60px;
-              padding-left: 20px;
-              padding-right: 20px;
+              padding-left: 30px;
+              padding-right: 30px;
               background-color: #fff;
-              text-decoration: underline;
               color: #000;
             }
           }
@@ -911,28 +918,37 @@ body {
 
 .our_projects {
   margin-top: 50px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: @sectionsBackgroundColor;
 
-  .our_projects_text {
-    max-width: 34%;
 
-    h2 {
-      font-weight: 700;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
 
-    .btn_consultation {
-      p {
-        line-height: 40px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .our_projects_text {
+      max-width: 34%;
+
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .btn_consultation {
+        p {
+          line-height: 40px;
+        }
       }
     }
-  }
 
-  .our_projects_vid {
-    max-width: 60%;
+    .our_projects_vid {
+      max-width: 60%;
+    }
   }
 }
 
@@ -1133,7 +1149,7 @@ body {
     }
 
     h3 {
-      background: @background_color;
+      background: @sectionsBackgroundColor;
       color: #fff;
       position: relative;
       padding-left: 20px;
@@ -1146,7 +1162,7 @@ body {
       label::before {
         content: '↓';
         color: #fff;
-        font-size: 40px;
+        font-size: 25px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -1182,7 +1198,7 @@ body {
 // footer
 
 footer {
-  background-color: @background_color;
+  background-color: @sectionsBackgroundColor;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -1218,6 +1234,8 @@ footer {
           display: inline-block;
           transition: all 0.3s ease;
           cursor: pointer;
+          font-weight: 700;
+
 
           &:hover {
             color: @btns_color;
