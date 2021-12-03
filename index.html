@@ -37,6 +37,7 @@
       <h3>Напишите нам для бесплатной консультации</h3>
       <form action="form.php" method="post" class="application_form">
         <div class="labels">
+          <p class="errorMessage">Проверьте корректоность полей</p>
           <label>
             <p class="your_name">Ваше имя</p>
             <input type="text" value size="40" name="name" id="name" />
@@ -46,13 +47,13 @@
             <input type="tel" value size="40" name="phone" id="tel" />
           </label>
           <label>
-            <p class="your_message">Пожелания/e-mail/впечатления</p>
-            <textarea name="message" cols="100" rows="1"> </textarea>
+            <p class="your_message">Сообщение</p>
+            <textarea name="message" cols="100" rows="1" id="message"> </textarea>
           </label>
         </div>
         <div class="form_btn_wrp">
           <div class="btn_consultation_send_data">
-            <p>Отправить</p>
+            <p id="button">Отправить</p>
           </div>
         </div>
       </form>

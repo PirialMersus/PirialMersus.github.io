@@ -101,16 +101,45 @@ body {
       font-size: 48px;
       line-height: 1.2;
       margin-top: 100px;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
         0px 0px 5px #000;
     }
 
     form {
       .labels {
+        position: relative;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
+
+        &.error {
+          .errorMessage {
+            display: block;
+          }
+
+          label {
+            >p {
+              text-shadow: @btns_color;
+            }
+
+            >input {
+              box-shadow: 0px 0px 5px @btns_color, 0px 0px 5px @btns_color, 0px 0px 5px @btns_color,
+            }
+          }
+        }
+
+        .errorMessage {
+          text-align: center;
+          position: absolute;
+          top: -40px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: @btns_color;
+          text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
+            0px 0px 5px #000;
+          display: none;
+        }
 
         label {
           >p {
@@ -133,6 +162,8 @@ body {
             background: #fff;
             font-size: 16px;
             width: 360px;
+            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
+
           }
 
           textarea {
@@ -146,6 +177,8 @@ body {
             border-radius: 2px;
             line-height: 36px;
             width: 360px;
+            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
+
           }
         }
       }
@@ -688,7 +721,7 @@ body {
       .galleryBox {
         position: relative;
         width: 200px;
-        height: 200px;
+        height: 150px;
         transform-style: preserve-3d;
         animation: animate 20s linear infinite;
 

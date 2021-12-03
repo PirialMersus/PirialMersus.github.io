@@ -14,7 +14,16 @@ var $site_header = $(".site_header");
 var $click_menu_wrp = $(".click_menu_wrp");
 var $questionH3 = document.getElementsByClassName("questionH3");
 var $btn_consultation_send_data = $(".btn_consultation_send_data");
-console.log($btn_consultation_send_data);
+
+function telValidation(tel) {
+  var regEx = /(\+38)?0\d{2}(.?\d){7}/im;
+  var validTel = regEx.test(tel);
+
+  if (!validTel) {
+    return false;
+  } else return true;
+}
+
 $(".background_slider").slider({
   animationSpeed: 900
 });
@@ -108,13 +117,36 @@ $click_menu_wrp.on("click touch", function () {
   }
 });
 $btn_consultation_send_data.on("click touch", function () {
-  console.log("hello"); // if ($(this).hasClass("active")) {
-  //   $(this).removeClass("active");
-  //   $nav_bar.removeClass("active");
-  // } else {
-  //   $(this).addClass("active");
-  //   $nav_bar.addClass("active");
-  // }
+  var $button = $("#button");
+  $button.text("Отправка...");
+  var name = $("#name").val();
+  var tel = $("#tel").val();
+  var message = $("#message").val();
+  var nameValidationCondition = name.length > 1;
+
+  if (!nameValidationCondition || !telValidation(tel)) {
+    $(".labels").addClass("error");
+    $button.text("Отправить");
+    return;
+  } else {
+    $(".labels").removeClass("error");
+  }
+
+  var contactParams = {
+    name: name,
+    tel: tel,
+    message: message
+  };
+  emailjs.send("service_gsfx0qh", "template_ojdxnxi", contactParams).then(function (response) {
+    console.log("SUCCESS!", response.status, response.text);
+    $button.text("Отправлено");
+    $("#name").val("");
+    $("#tel").val("");
+    $("#message").val("");
+  }, function (error) {
+    console.log("Ошибка...", error);
+    $button.text("Отправить");
+  });
 });
 
 for (var i = 0; i < $questionH3.length; i++) {

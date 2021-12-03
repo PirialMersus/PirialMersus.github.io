@@ -83,13 +83,33 @@ body {
   font-size: 48px;
   line-height: 1.2;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
 }
 .drop_modal_form .container form .labels {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+}
+.drop_modal_form .container form .labels.error .errorMessage {
+  display: block;
+}
+.drop_modal_form .container form .labels.error label > p {
+  text-shadow: #fb2f2f;
+}
+.drop_modal_form .container form .labels.error label > input {
+  box-shadow: 0px 0px 5px #fb2f2f, 0px 0px 5px #fb2f2f, 0px 0px 5px #fb2f2f;
+}
+.drop_modal_form .container form .labels .errorMessage {
+  text-align: center;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fb2f2f;
+  text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
+  display: none;
 }
 .drop_modal_form .container form .labels label > p {
   font-size: 16px;
@@ -108,6 +128,7 @@ body {
   background: #fff;
   font-size: 16px;
   width: 360px;
+  box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
 }
 .drop_modal_form .container form .labels label textarea {
   font-size: 16px;
@@ -119,6 +140,7 @@ body {
   border-radius: 2px;
   line-height: 36px;
   width: 360px;
+  box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
 }
 .drop_modal_form .container form .form_btn_wrp {
   display: flex;
@@ -521,7 +543,7 @@ body {
 .gallery_section .container .gallery .galleryBox {
   position: relative;
   width: 200px;
-  height: 200px;
+  height: 150px;
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
 }

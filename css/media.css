@@ -8,7 +8,7 @@
   .drop_modal_form .container h3 {
     margin-top: 50px;
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   .drop_modal_form .container form .labels label {
     box-sizing: border-box;
@@ -54,9 +54,6 @@
   .timerSection {
     margin-left: 20px;
     margin-right: 20px;
-  }
-  .gallery_sectionery .galleryBox {
-    padding: 0px 20px;
   }
   .our_teachers_section .our_teachers {
     padding: 20px;
@@ -215,7 +212,7 @@
   .drop_modal_form .container h3 {
     margin-top: 30px;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
   }
   .drop_modal_form .container form .labels label > input {
     line-height: 28px;
