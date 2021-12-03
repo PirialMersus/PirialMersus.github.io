@@ -16,7 +16,7 @@ var $questionH3 = document.getElementsByClassName("questionH3");
 var $btn_consultation_send_data = $(".btn_consultation_send_data");
 
 function telValidation(tel) {
-  var regEx = /(\+38)?\D{0,2}0(\D{0,2}\d){9}/im;
+  var regEx = /(\+)?(\D{0,2}\d){10,13}/im;
   var validTel = regEx.test(tel);
 
   if (!validTel) {
