@@ -27,6 +27,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 img {
   display: block;
@@ -155,7 +156,7 @@ body {
   padding-right: 50px;
   display: inline-block;
   cursor: pointer;
-  background-color: #112d5e;
+  background-color: #661166;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -207,10 +208,10 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #5f5a5a;
-  background-color: rgba(23, 74, 163, 0.4);
+  background-color: rgba(102, 17, 102, 0.4);
 }
 .site_header.scroll {
-  background-color: #112d5e;
+  background-color: #661166;
   border-bottom: 1px solid #000;
 }
 .site_header .site_logo {
@@ -299,8 +300,18 @@ body {
   z-index: 5;
   font-size: 18px;
 }
+.reloading .container {
+  overflow: hidden;
+}
 .reloading .container .soulReloadingBlock {
   margin-top: 100px;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.reloading .container .soulReloadingBlock.scully {
+  transform: translateX(0);
+  opacity: 1;
 }
 .reloading .container .soulReloadingBlock h2 {
   text-align: center;
@@ -350,13 +361,21 @@ body {
 }
 .telegramSection {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .telegramSection .telegramContent {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
   max-width: 1080px;
   display: flex;
   justify-content: center;
   flex-wrap: no-wrap;
   align-items: center;
+}
+.telegramSection .telegramContent.scully {
+  transform: translateX(0);
+  opacity: 1;
 }
 .telegramSection .telegramContent .textContent h2 {
   font-size: 2em;
@@ -378,6 +397,16 @@ body {
 }
 .shedule {
   margin-bottom: 100px;
+  overflow: hidden;
+}
+.shedule .container {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.shedule .container.scully {
+  transform: translateX(0);
+  opacity: 1;
 }
 .shedule .container h2 {
   text-align: center;
@@ -476,13 +505,23 @@ body {
   max-width: 450px;
 }
 .timerSection {
+  background-color: #661166;
+  overflow: hidden;
   margin-bottom: 100px;
-  background-color: #112d5e;
-  display: flex;
-  justify-content: center;
   padding: 50px 0;
 }
-.timerSection a {
+.timerSection .container {
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: center;
+}
+.timerSection .container.scully {
+  transform: translateX(0);
+  opacity: 1;
+}
+.timerSection .container a {
   cursor: auto !important;
   max-width: 60%;
 }
@@ -525,12 +564,17 @@ body {
 .gallery_section {
   margin-bottom: 100px;
   box-sizing: border-box;
-  background-color: #112d5e;
+  background-color: #661166;
 }
 .gallery_section .container {
   text-align: center;
   margin: auto;
   position: relative;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+.gallery_section .container.scully {
+  opacity: 1;
 }
 .gallery_section .container .gallery {
   display: flex;
@@ -593,13 +637,21 @@ body {
   line-height: 40px;
 }
 .our_teachers_section {
-  background-color: #112d5e;
+  background-color: #661166;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .our_teachers_section .our_teachers {
   background: none no-repeat scroll right top transparent;
   background-image: url(../img/helen.jpg);
   background-size: 60% auto;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.our_teachers_section .our_teachers.scully {
+  transform: translateX(0);
+  opacity: 1;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column {
   max-width: 40%;
@@ -656,7 +708,7 @@ body {
   z-index: 100;
   display: block;
   transition: all 0.3s ease;
-  background-color: #112d5e;
+  background-color: #661166;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp .our_teachers_link .p_number {
   display: inline-block;
@@ -688,11 +740,19 @@ body {
   margin-bottom: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #112d5e;
+  background-color: #661166;
+  overflow: hidden;
 }
 .our_projects .container {
   display: flex;
   justify-content: space-between;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.our_projects .container.scully {
+  transform: translateX(0);
+  opacity: 1;
 }
 .our_projects .container .our_projects_text {
   max-width: 34%;
@@ -711,20 +771,30 @@ body {
 }
 .prices {
   margin-bottom: 100px;
+  overflow: hidden;
 }
-.prices h1 {
+.prices .container {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.prices .container.scully {
+  transform: translateX(0);
+  opacity: 1;
+}
+.prices .container h1 {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
 }
-.prices .pricesContainer {
+.prices .container .pricesContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.prices .pricesContainer .card {
+.prices .container .pricesContainer .card {
   position: relative;
   width: 300px;
   height: 400px;
@@ -737,24 +807,24 @@ body {
   overflow: hidden;
   transition: 0.5s;
 }
-.prices .pricesContainer .card:hover {
+.prices .container .pricesContainer .card:hover {
   box-shadow: 0 10px 30px rgb(0 0 0%);
 }
-.prices .pricesContainer .card:hover span {
+.prices .container .pricesContainer .card:hover span {
   opacity: 1;
 }
-.prices .pricesContainer .card:hover .content h2 {
+.prices .container .pricesContainer .card:hover .content h2 {
   opacity: 1;
   transform: translateY(-70px);
 }
-.prices .pricesContainer .card:hover .content h3 {
+.prices .container .pricesContainer .card:hover .content h3 {
   opacity: 1;
   color: #fb2f2f;
 }
-.prices .pricesContainer .card:hover .content p {
+.prices .container .pricesContainer .card:hover .content p {
   opacity: 1;
 }
-.prices .pricesContainer .card:before {
+.prices .container .pricesContainer .card:before {
   content: "";
   position: absolute;
   top: 2px;
@@ -764,11 +834,11 @@ body {
   pointer-events: none;
   background: rgba(255, 255, 255, 0.1);
 }
-.prices .pricesContainer .card .content {
+.prices .container .pricesContainer .card .content {
   padding: 30px;
   text-align: center;
 }
-.prices .pricesContainer .card .content h2 {
+.prices .container .pricesContainer .card .content h2 {
   position: absolute;
   right: 30px;
   font-size: 4em;
@@ -778,7 +848,7 @@ body {
   opacity: 0.1;
   transition: 0.5s;
 }
-.prices .pricesContainer .card .content h3 {
+.prices .container .pricesContainer .card .content h3 {
   position: relative;
   font-size: 2em;
   color: #fff;
@@ -788,7 +858,7 @@ body {
   transition: 0.5s;
   margin-bottom: 30px;
 }
-.prices .pricesContainer .card .content .cardText {
+.prices .container .pricesContainer .card .content .cardText {
   position: relative;
   font-size: 1.1em;
   font-weight: 300;
@@ -798,14 +868,14 @@ body {
   transition: 0.5s;
   margin-bottom: 30px;
 }
-.prices .pricesContainer .card .content .btn_consultation p {
+.prices .container .pricesContainer .card .content .btn_consultation p {
   line-height: 40px;
 }
-.prices .pricesContainer .card span {
+.prices .container .pricesContainer .card span {
   transition: 0.5s;
   opacity: 0;
 }
-.prices .pricesContainer .card span:nth-child(1) {
+.prices .container .pricesContainer .card span:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -814,7 +884,7 @@ body {
   background: linear-gradient(to right, transparent, #fb2f2f);
   animation: animate1 2s linear infinite;
 }
-.prices .pricesContainer .card span:nth-child(2) {
+.prices .container .pricesContainer .card span:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -824,7 +894,7 @@ body {
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
 }
-.prices .pricesContainer .card span:nth-child(3) {
+.prices .container .pricesContainer .card span:nth-child(3) {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -833,7 +903,7 @@ body {
   background: linear-gradient(to left, transparent, #fb2f2f);
   animation: animate3 2s linear infinite;
 }
-.prices .pricesContainer .card span:nth-child(4) {
+.prices .container .pricesContainer .card span:nth-child(4) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -845,6 +915,11 @@ body {
 }
 .questions {
   margin-bottom: 100px;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+.questions.scully {
+  opacity: 1;
 }
 .questions h1 {
   text-align: center;
@@ -869,7 +944,7 @@ body {
   height: 100%;
 }
 .questions .questionBox h3 {
-  background: #112d5e;
+  background: #661166;
   color: #fff;
   position: relative;
   padding-left: 20px;
@@ -907,15 +982,23 @@ body {
   color: #00a8ff;
 }
 footer {
-  background-color: #112d5e;
+  background-color: #661166;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
+  overflow: hidden;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+footer .container.scully {
+  transform: translateY(0);
+  opacity: 1;
 }
 footer .container .copyright img {
   margin: 0 auto;

@@ -1,6 +1,6 @@
 "use strict";
 
-var section_width = $(".wellcome").width();
+var section_width = $(".reloading").width();
 var container_width = $(".container").width();
 var section_text_procent = 0;
 var $our_teachers_text_column = $(".our_teachers_text_column");
@@ -58,7 +58,10 @@ $(document).ready(function () {
       this.className = "active";
     });
   }
-}); // client is thinking. To do this feature or not to do?
+});
+window.addEventListener("resize", function () {
+  section_width = $(".reloading").width();
+}, false); // client is thinking. To do this feature or not to do?
 // $(document).ready(function () {
 //     $.fn.animate_Text = function () {
 //         var string = this.text();
@@ -140,6 +143,7 @@ $btn_consultation_send_data.on("click touch", function () {
   emailjs.send("service_gsfx0qh", "template_ojdxnxi", contactParams).then(function (response) {
     console.log("SUCCESS!", response.status, response.text);
     $button.text("Отправлено");
+    $drop_modal_form.removeClass("active");
     $("#name").val("");
     $("#tel").val("");
     $("#message").val("");

@@ -147,6 +147,9 @@
 .slider_container .slides_row .slide.alex {
   background-position: right bottom;
 }
+.slider_container .slides_row .slide.alexInna {
+  background-position: left center;
+}
 .slider_container .slides_row .slide .sliderContent {
   display: inline-block;
   align-self: center;
@@ -250,5 +253,8 @@
 @media (max-width: 600px) {
   .slider_container .slides_row .slide.alex {
     background-position: 75% 20%;
+  }
+  .slider_container .slides_row .slide.alexInna {
+    background-position: 13% 20%;
   }
 }

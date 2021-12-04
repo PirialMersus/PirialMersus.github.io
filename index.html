@@ -37,7 +37,7 @@
       <h3>Напишите нам для бесплатной консультации</h3>
       <form action="form.php" method="post" class="application_form">
         <div class="labels">
-          <p class="errorMessage">Проверьте корректоность полей</p>
+          <p class="errorMessage">Проверьте корректность полей</p>
           <label>
             <p class="your_name">Ваше имя</p>
             <input type="text" value size="40" name="name" id="name" />
@@ -105,14 +105,13 @@
           <p>Осталось 8 мест из 15</p>
         </div>
       </div>
-      <div class="slide" data_attr="2" style="
+      <div class="slide alexInna" data_attr="2" style="
             background-image: url(img/AlexAndInna.jpg);
-            /* background-position: left bottom; */
           ">
         <div class="sliderContent">
           <h3>
-            Романтический тур в честь<br />
-            ДНЯ ВСЕХ ВЛЮБЛЕННЫХ
+            Почувствуй нашу любовь<br />
+            ЛЕКЦИЯ
           </h3>
           <h4>Теория гармоничных отношений</h4>
           <p class="date"></p>
@@ -120,8 +119,7 @@
       </div>
       <div class="slide alex" data_attr="3" style="
             background-image: url(img/SanyaSnow.jpg);
-            /* background-position: right bottom; */
-          " wellcome>
+          ">
         <div class="sliderContent">
           <h3>А ты что выберешь, <span>лыжи</span> или <span>борд</span>?</h3>
         </div>
@@ -136,7 +134,7 @@
 
   <section class="reloading">
     <div class="container">
-      <div class="soulReloadingBlock">
+      <div class="soulReloadingBlock" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
         <h2>Отдых для души и тела</h2>
         <div class="advantagesBlock">
           <div class="advantageDiv">
@@ -179,7 +177,7 @@
   <!-- our projects -->
 
   <section class="our_projects">
-    <div class="container">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
       <div class="our_projects_text">
         <h2>Просмотреть остальные видео</h2>
         <div class="btn_consultation">
@@ -202,7 +200,7 @@
   <!-- shedule -->
 
   <section class="shedule">
-    <div class="container">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
       <h2>Все еще думаешь, как с пользой провести зиму?</h2>
       <div class="sheduleBox">
         <ul class="sheduleHeader">
@@ -246,15 +244,17 @@
 
   <!-- timer -->
 
-  <section class="timerSection container">
-    <a href="https://logwork.com/countdown-rkz4" class="countdown-timer" data-timezone="Europe/Simferopol"
-      data-language="ru" data-textcolor="#ffffff" onclick="return false" data-date="2022-01-01 00:00"
-      data-background="#000000" data-unitscolor="#ffffff">До нового года осталось</a>
+  <section class="timerSection">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
+      <a href="https://logwork.com/countdown-rkz4" class="countdown-timer" data-timezone="Europe/Simferopol"
+        data-language="ru" data-textcolor="#ffffff" onclick="return false" data-date="2022-01-01 00:00"
+        data-background="#000000" data-unitscolor="#ffffff">До нового года осталось</a>
+    </div>
   </section>
 
   <!-- telegram section -->
   <section class="telegramSection container">
-    <div class="telegramContent">
+    <div class="telegramContent" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
       <div class="textContent">
         <h2>Подпишись и получи один из двух бонусов<br>
         </h2>
@@ -280,7 +280,7 @@
   <!-- nature gallery -->
 
   <section class="gallery_section">
-    <div class="container">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
 
       <div class="gallery">
         <div class="galleryBox">
@@ -322,7 +322,7 @@
 
   <section class="our_teachers_section" id="our_teachers">
     <div class="container">
-      <div class="our_teachers">
+      <div class="our_teachers" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
         <div class="our_teachers_text_column">
           <div class="our_teachers_text_column_inner_wrp">
             <h4>Наши преподаватели:</h4>
@@ -370,58 +370,60 @@
   </section>
 
   <!-- cost -->
-  <section class="prices container" id="prices">
-    <h1>Пакеты</h1>
-    <div class="pricesContainer">
-      <div class="card">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div class="content">
-          <h2>01</h2>
-          <h3>Локация Славское </h3>
-          <p class="cardText">
-            аванс 1000 в стоимость входит не входит
-            до 5500 с чела до НГ Проживание ЖД Билеты
-            до 5600 с чела до 15.01 Трансфер в гостиницу с вокзала
-          </p>
-          <div class="btn_consultation">
-            <p>Read more</p>
+  <section class="prices" id="prices">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
+      <h1>Пакеты</h1>
+      <div class="pricesContainer">
+        <div class="card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <h2>01</h2>
+            <h3>Локация Славское </h3>
+            <p class="cardText">
+              аванс 1000 в стоимость входит не входит
+              до 5500 с чела до НГ Проживание ЖД Билеты
+              до 5600 с чела до 15.01 Трансфер в гостиницу с вокзала
+            </p>
+            <div class="btn_consultation">
+              <p>Read more</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div class="content">
-          <h2>02</h2>
-          <h3>Скейпасы</h3>
-          <p class="cardText">
-            до 5800 с чела до 01,02 Тренировки по йоге аренда лыж
-            до 6000 с чела с 01,02 Все практики семинара прочие
-          </p>
-          <div class="btn_consultation">
-            <p>Read more</p>
+        <div class="card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <h2>02</h2>
+            <h3>Скейпасы</h3>
+            <p class="cardText">
+              до 5800 с чела до 01,02 Тренировки по йоге аренда лыж
+              до 6000 с чела с 01,02 Все практики семинара прочие
+            </p>
+            <div class="btn_consultation">
+              <p>Read more</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div class="content">
-          <h2>03</h2>
-          <h3>Развлечения на курорте</h3>
-          <p class="cardText">
-            билеты отдельно питание
-            скидка 1000 грн парам на двоих
-          </p>
-          <div class="btn_consultation">
-            <p>Read more</p>
+        <div class="card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <h2>03</h2>
+            <h3>Развлечения на курорте</h3>
+            <p class="cardText">
+              билеты отдельно питание
+              скидка 1000 грн парам на двоих
+            </p>
+            <div class="btn_consultation">
+              <p>Read more</p>
+            </div>
           </div>
         </div>
       </div>
@@ -430,7 +432,8 @@
 
   <!-- questions -->
 
-  <section class="questions container" id="questions">
+  <section class="questions container" id="questions" data-scroll="scully" data-scroll-repeat="true"
+    data-scroll-reverse="true">
     <h1>Часто задаваемые вопросы</h1>
     <div class="questionBox">
       <h3 class="questionH3"><label for="faq-1">Кто вы ?</label></h3>
@@ -461,7 +464,7 @@
   <!-- footer -->
 
   <footer id="contacts">
-    <div class="container">
+    <div class="container" data-scroll="scully" data-scroll-repeat="true" data-scroll-reverse="true">
       <div class="copyright">
         <img src="./img/logo1.png" alt="logo" />
         <p>© 2021 YogaDharmaSamadhi</p>
@@ -486,6 +489,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/onScroll.js"></script>
   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>

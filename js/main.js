@@ -1,4 +1,4 @@
-var section_width = $(".wellcome").width();
+var section_width = $(".reloading").width();
 var container_width = $(".container").width();
 var section_text_procent = 0;
 var $our_teachers_text_column = $(".our_teachers_text_column");
@@ -60,6 +60,14 @@ $(document).ready(function () {
     });
   }
 });
+
+window.addEventListener(
+  "resize",
+  function () {
+    section_width = $(".reloading").width();
+  },
+  false
+);
 
 // client is thinking. To do this feature or not to do?
 // $(document).ready(function () {
@@ -153,6 +161,7 @@ $btn_consultation_send_data.on("click touch", function () {
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         $button.text("Отправлено");
+        $drop_modal_form.removeClass("active");
         $("#name").val("");
         $("#tel").val("");
         $("#message").val("");

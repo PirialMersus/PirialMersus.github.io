@@ -33,6 +33,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 img {
@@ -261,7 +262,7 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgb(95, 90, 90);
-  background-color: rgba(23, 74, 163, 0.4);
+  background-color: rgba(102, 17, 102, 0.4);
 
   &.scroll {
     background-color: @sectionsBackgroundColor;
@@ -383,8 +384,19 @@ body {
 
 .reloading {
   .container {
+    overflow: hidden;
+
     .soulReloadingBlock {
       margin-top: 100px;
+
+      transform: translateX(120%);
+      opacity: 0;
+      transition: all 0.5s linear;
+
+      &.scully {
+        transform: translateX(0);
+        opacity: 1;
+      }
 
       h2 {
         text-align: center;
@@ -461,8 +473,18 @@ body {
 
 .telegramSection {
   margin-bottom: 100px;
+  overflow: hidden;
 
   .telegramContent {
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     max-width: 1080px;
     display: flex;
     justify-content: center;
@@ -500,8 +522,18 @@ body {
 
 .shedule {
   margin-bottom: 100px;
+  overflow: hidden;
 
   .container {
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     h2 {
       text-align: center;
       font-size: 2em;
@@ -623,15 +655,31 @@ body {
 // timer
 
 .timerSection {
-  margin-bottom: 100px;
   background-color: @sectionsBackgroundColor;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 100px;
   padding: 50px 0;
 
-  a {
-    cursor: auto !important;
-    max-width: 60%;
+
+
+  .container {
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+
+    display: flex;
+    justify-content: center;
+
+    a {
+      cursor: auto !important;
+      max-width: 60%;
+    }
   }
 }
 
@@ -695,6 +743,13 @@ body {
     text-align: center;
     margin: auto;
     position: relative;
+
+    opacity: 0;
+    transition: opacity 3s linear;
+
+    &.scully {
+      opacity: 1;
+    }
 
     // h2 {
     //   position: absolute;
@@ -839,11 +894,24 @@ body {
 .our_teachers_section {
   background-color: @sectionsBackgroundColor;
   margin-bottom: 100px;
+  overflow: hidden;
 
   .our_teachers {
     background: none no-repeat scroll right top transparent;
     background-image: url(../img/helen.jpg);
     background-size: 60% auto;
+
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+
+
 
     .our_teachers_text_column {
       max-width: 40%;
@@ -955,12 +1023,22 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: @sectionsBackgroundColor;
+  overflow: hidden;
 
 
 
   .container {
     display: flex;
     justify-content: space-between;
+
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
 
     .our_projects_text {
       max-width: 34%;
@@ -989,157 +1067,169 @@ body {
 
 .prices {
   margin-bottom: 100px;
+  overflow: hidden;
 
-  h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
+  .container {
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
 
-  .pricesContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    &.scully {
+      transform: translateX(0);
+      opacity: 1;
+    }
 
-    .card {
-      position: relative;
-      width: 300px;
-      height: 400px;
-      background: #0c002b;
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .pricesContainer {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 30px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-      overflow: hidden;
-      transition: 0.5s;
+      flex-wrap: wrap;
 
-      &:hover {
-        box-shadow: 0 10px 30px rgb(0 0 0 / 90%);
+      .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: #0c002b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        transition: 0.5s;
 
-        span {
-          opacity: 1;
+        &:hover {
+          box-shadow: 0 10px 30px rgb(0 0 0 / 90%);
+
+          span {
+            opacity: 1;
+          }
+
+          .content {
+            h2 {
+              opacity: 1;
+              transform: translateY(-70px);
+            }
+
+            h3 {
+              opacity: 1;
+              color: @btns_color;
+            }
+
+            p {
+              opacity: 1;
+            }
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 3px;
+          bottom: 2px;
+          width: 50%;
+          pointer-events: none;
+          background: rgba(255, 255, 255, 0.1);
         }
 
         .content {
+          padding: 30px;
+          text-align: center;
+
           h2 {
-            opacity: 1;
-            transform: translateY(-70px);
+            position: absolute;
+            // top        : 90px;
+            right: 30px;
+            font-size: 4em;
+            font-weight: 800px;
+            color: @btns_color;
+            z-index: 1;
+            opacity: 0.1;
+            transition: 0.5s;
           }
 
           h3 {
+            position: relative;
+            font-size: 2em;
+            color: #fff;
+            z-index: 2;
             opacity: 1;
-            color: @btns_color;
+            letter-spacing: 1px;
+            transition: 0.5s;
+            margin-bottom: 30px;
           }
 
-          p {
-            opacity: 1;
+          .cardText {
+            position: relative;
+            font-size: 1.1em;
+            font-weight: 300;
+            color: #fff;
+            z-index: 2;
+            opacity: 0.5;
+            transition: 0.5s;
+            margin-bottom: 30px;
+          }
+
+          .btn_consultation {
+            p {
+              line-height: 40px;
+            }
           }
         }
-      }
 
-      &:before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 3px;
-        bottom: 2px;
-        width: 50%;
-        pointer-events: none;
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      .content {
-        padding: 30px;
-        text-align: center;
-
-        h2 {
-          position: absolute;
-          // top        : 90px;
-          right: 30px;
-          font-size: 4em;
-          font-weight: 800px;
-          color: @btns_color;
-          z-index: 1;
-          opacity: 0.1;
+        span {
           transition: 0.5s;
-        }
+          opacity: 0;
 
-        h3 {
-          position: relative;
-          font-size: 2em;
-          color: #fff;
-          z-index: 2;
-          opacity: 1;
-          letter-spacing: 1px;
-          transition: 0.5s;
-          margin-bottom: 30px;
-        }
-
-        .cardText {
-          position: relative;
-          font-size: 1.1em;
-          font-weight: 300;
-          color: #fff;
-          z-index: 2;
-          opacity: 0.5;
-          transition: 0.5s;
-          margin-bottom: 30px;
-        }
-
-        .btn_consultation {
-          p {
-            line-height: 40px;
+          &:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, @btns_color);
+            animation: animate1 2s linear infinite;
           }
-        }
-      }
 
-      span {
-        transition: 0.5s;
-        opacity: 0;
+          &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to bottom, transparent, @btns_color);
+            animation: animate2 2s linear infinite;
+            animation-delay: 1s;
+          }
 
-        &:nth-child(1) {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background: linear-gradient(to right, transparent, @btns_color);
-          animation: animate1 2s linear infinite;
-        }
+          &:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to left, transparent, @btns_color);
+            animation: animate3 2s linear infinite;
+          }
 
-        &:nth-child(2) {
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 100%;
-          width: 3px;
-          background: linear-gradient(to bottom, transparent, @btns_color);
-          animation: animate2 2s linear infinite;
-          animation-delay: 1s;
-        }
-
-        &:nth-child(3) {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-          height: 3px;
-          background: linear-gradient(to left, transparent, @btns_color);
-          animation: animate3 2s linear infinite;
-        }
-
-        &:nth-child(4) {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          height: 100%;
-          width: 3px;
-          background: linear-gradient(to top, transparent, @btns_color);
-          animation: animate4 2s linear infinite;
-          animation-delay: 1s;
+          &:nth-child(4) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to top, transparent, @btns_color);
+            animation: animate4 2s linear infinite;
+            animation-delay: 1s;
+          }
         }
       }
     }
@@ -1150,6 +1240,13 @@ body {
 
 .questions {
   margin-bottom: 100px;
+
+  opacity: 0;
+  transition: opacity 3s linear;
+
+  &.scully {
+    opacity: 1;
+  }
 
   h1 {
     text-align: center;
@@ -1235,11 +1332,21 @@ footer {
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
+  overflow: hidden;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    transform: translateY(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.scully {
+      transform: translateY(0);
+      opacity: 1;
+    }
 
     .copyright {
       img {
