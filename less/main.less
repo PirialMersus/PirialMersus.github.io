@@ -33,7 +33,6 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 img {
@@ -44,6 +43,10 @@ img {
 
 body {
   background-color: @backgroundColor;
+  // background-image: url(../img/space.jpg);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
 }
 
 .nav_bar {
@@ -88,7 +91,7 @@ body {
       margin-right: 20px;
     }
 
-    >img {
+    > img {
       display: inline-block;
       width: 30px;
       cursor: pointer;
@@ -120,12 +123,13 @@ body {
           }
 
           label {
-            >p {
+            > p {
               text-shadow: @btns_color;
             }
 
-            >input {
-              box-shadow: 0px 0px 5px @btns_color, 0px 0px 5px @btns_color, 0px 0px 5px @btns_color,
+            > input {
+              box-shadow: 0px 0px 5px @btns_color, 0px 0px 5px @btns_color,
+                0px 0px 5px @btns_color;
             }
           }
         }
@@ -143,7 +147,7 @@ body {
         }
 
         label {
-          >p {
+          > p {
             font-size: 16px;
             color: #fff;
             margin-bottom: 5px;
@@ -151,7 +155,7 @@ body {
               0px 0px 5px #000;
           }
 
-          >input {
+          > input {
             box-sizing: border-box;
             line-height: 36px;
             color: #000;
@@ -163,11 +167,11 @@ body {
             background: #fff;
             font-size: 16px;
             width: 360px;
-            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
-
+            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
           }
 
           textarea {
+            resize: none;
             font-size: 16px;
             padding-top: 1px;
             padding-bottom: 1px;
@@ -178,8 +182,7 @@ body {
             border-radius: 2px;
             line-height: 36px;
             width: 360px;
-            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
-
+            box-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
           }
         }
       }
@@ -265,7 +268,7 @@ body {
   background-color: rgba(102, 17, 102, 0.4);
 
   &.scroll {
-    background-color: @sectionsBackgroundColor;
+    background-color: #000;
     border-bottom: 1px solid #000;
   }
 
@@ -306,7 +309,7 @@ body {
   }
 
   .btn_consultation {
-    >p {
+    > p {
       position: relative;
 
       &:before {
@@ -341,7 +344,6 @@ body {
   display: inline-block;
   cursor: pointer;
   background-color: #000;
-  ;
   position: relative;
   z-index: 4;
   transition: all 0.6s ease;
@@ -392,6 +394,7 @@ body {
       transform: translateX(120%);
       opacity: 0;
       transition: all 0.5s linear;
+      transition-delay: 500ms;
 
       &.scully {
         transform: translateX(0);
@@ -429,7 +432,6 @@ body {
 
             &.img2 {
               background-image: url(../img/icons/beauty.jpg);
-
             }
 
             &.img3 {
@@ -469,7 +471,7 @@ body {
   }
 }
 
-// telegram 
+// telegram
 
 .telegramSection {
   margin-bottom: 100px;
@@ -479,6 +481,7 @@ body {
     transform: translateX(120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
@@ -528,6 +531,7 @@ body {
     transform: translateX(120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
@@ -543,7 +547,7 @@ body {
     .sheduleBox {
       text-align: center;
       padding: 20px 5px 5px 5px;
-      background-color: @backgroundColor;
+      // background-color: @backgroundColor;
 
       .sheduleHeader {
         display: inline-flex;
@@ -590,17 +594,17 @@ body {
             opacity: 0;
           }
 
-          &:nth-child(1).active~.backgroundSlide {
+          &:nth-child(1).active ~ .backgroundSlide {
             left: 0;
             opacity: 1;
           }
 
-          &:nth-child(2).active~.backgroundSlide {
+          &:nth-child(2).active ~ .backgroundSlide {
             left: 150px;
             opacity: 1;
           }
 
-          &:nth-child(3).active~.backgroundSlide {
+          &:nth-child(3).active ~ .backgroundSlide {
             left: 300px;
             opacity: 1;
           }
@@ -655,23 +659,24 @@ body {
 // timer
 
 .timerSection {
-  background-color: @sectionsBackgroundColor;
+  background-image: url(../img/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
   margin-bottom: 100px;
   padding: 50px 0;
-
-
 
   .container {
     transform: translateX(-120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
     }
-
 
     display: flex;
     justify-content: center;
@@ -734,6 +739,7 @@ body {
 }
 
 // gallery
+
 .gallery_section {
   margin-bottom: 100px;
   box-sizing: border-box;
@@ -764,19 +770,18 @@ body {
     //   -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
     // }
 
-
     .gallery {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height: 70vh;
       width: 100%;
       overflow: hidden;
 
       .galleryBox {
         position: relative;
-        width: 200px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         transform-style: preserve-3d;
         animation: animate 20s linear infinite;
 
@@ -798,8 +803,10 @@ body {
           // transform-origin: center;
           // transform-style: preserve-3d;
           // transform: translateZ(0);
-          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em rgb(119, 109, 109);
-          -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+            0 0 1em rgb(119, 109, 109);
+          -webkit-box-reflect: below 0px
+            linear-gradient(transparent, transparent, #0004);
           animation: animate3d 20s linear infinite;
         }
 
@@ -813,7 +820,8 @@ body {
           transform-style: preserve-3d;
           overflow: hidden;
           transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-          -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+          -webkit-box-reflect: below 0px
+            linear-gradient(transparent, transparent, #0004);
 
           img {
             image-rendering: auto;
@@ -826,7 +834,6 @@ body {
               transform: scale(1.2);
               transition: 0.3s all ease;
             }
-
           }
         }
       }
@@ -904,14 +911,12 @@ body {
     transform: translateX(-120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
     }
-
-
-
 
     .our_teachers_text_column {
       max-width: 40%;
@@ -1018,14 +1023,15 @@ body {
 // our projects
 
 .our_projects {
-  margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: @sectionsBackgroundColor;
+  // background-color: @sectionsBackgroundColor;
+  background-image: url(../img/karpatian8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
-
-
 
   .container {
     display: flex;
@@ -1034,6 +1040,7 @@ body {
     transform: translateX(-120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
@@ -1073,6 +1080,7 @@ body {
     transform: translateX(120%);
     opacity: 0;
     transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
@@ -1101,7 +1109,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: 30px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         overflow: hidden;
         transition: 0.5s;
 
@@ -1273,7 +1281,6 @@ body {
 
         p {
           height: 100%;
-
         }
       }
     }
@@ -1290,7 +1297,7 @@ body {
       }
 
       label::before {
-        content: '↓';
+        content: "↓";
         color: #fff;
         font-size: 25px;
         position: absolute;
@@ -1334,6 +1341,13 @@ footer {
   padding-top: 30px;
   overflow: hidden;
 
+  &.scully {
+    .container {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -1342,11 +1356,7 @@ footer {
     transform: translateY(120%);
     opacity: 0;
     transition: all 0.5s linear;
-
-    &.scully {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    transition-delay: 500ms;
 
     .copyright {
       img {
@@ -1375,7 +1385,6 @@ footer {
           transition: all 0.3s ease;
           cursor: pointer;
           font-weight: 700;
-
 
           &:hover {
             color: @btns_color;

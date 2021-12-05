@@ -1,3 +1,5 @@
+"use strict";
+
 var section_width = $(".reloading").width();
 var container_width = $(".container").width();
 var section_text_procent = 0;
@@ -14,18 +16,20 @@ var $questionH3 = document.getElementsByClassName("questionH3");
 var $btn_consultation_send_data = $(".btn_consultation_send_data");
 
 function telValidation(tel) {
-  const regEx = /(\+)?(\D{0,2}\d){10,13}/im;
-  const validTel = regEx.test(tel);
+  var regEx = /(\+)?(\D{0,2}\d){10,13}/im;
+  var validTel = regEx.test(tel);
+
   if (!validTel) {
     return false;
   } else return true;
 }
 
-$(".parallax-window").parallax({ imageSrc: "/img/space.jpg" });
-// $(".our_projects").parallax({ imageSrc: "/img/karpatian8.jpg" });
+$(".parallax-window").parallax({
+  imageSrc: "/img/space.jpg"
+}); // $(".our_projects").parallax({ imageSrc: "/img/karpatian8.jpg" });
 
 $(".background_slider").slider({
-  animationSpeed: 900,
+  animationSpeed: 900
 });
 
 (function () {
@@ -35,44 +39,33 @@ $(".background_slider").slider({
 $("a.scroll-to").on("click", function (e) {
   e.preventDefault();
   var anchor = $(this).attr("href");
-  $("html, body")
-    .stop()
-    .animate(
-      {
-        scrollTop: $(anchor).offset().top - 60,
-      },
-      800
-    );
+  $("html, body").stop().animate({
+    scrollTop: $(anchor).offset().top - 60
+  }, 800);
 });
-
 $(document).ready(function () {
-  const $links = $(".sheduleHeader li");
-  const $contentBox = $(".contentBox");
+  var $links = $(".sheduleHeader li");
+  var $contentBox = $(".contentBox");
 
-  for (let i = 0; i < $contentBox.length; i++) {
+  for (var i = 0; i < $contentBox.length; i++) {
     $links[i].addEventListener("click", function () {
-      for (let j = 0; j < $contentBox.length; j++) {
+      for (var j = 0; j < $contentBox.length; j++) {
         $contentBox[j].className = "contentBox";
       }
+
       document.getElementById(this.dataset.id).className = "contentBox active";
 
-      for (let j = 0; j < $contentBox.length; j++) {
-        $links[j].className = "";
+      for (var _j = 0; _j < $contentBox.length; _j++) {
+        $links[_j].className = "";
       }
+
       this.className = "active";
     });
   }
 });
-
-window.addEventListener(
-  "resize",
-  function () {
-    section_width = $(".reloading").width();
-  },
-  false
-);
-
-// client is thinking. To do this feature or not to do?
+window.addEventListener("resize", function () {
+  section_width = $(".reloading").width();
+}, false); // client is thinking. To do this feature or not to do?
 // $(document).ready(function () {
 //     $.fn.animate_Text = function () {
 //         var string = this.text();
@@ -106,9 +99,7 @@ $(document).on("scroll", window, function () {
       $site_header.removeClass("scroll");
     }
   }
-});
-
-// if (section_width > 1200) {
+}); // if (section_width > 1200) {
 //   section_text_procent =
 //     (((section_width / 100) * 40 - (section_width - container_width) / 2) *
 //       100) /
@@ -132,16 +123,13 @@ $click_menu_wrp.on("click touch", function () {
     $nav_bar.addClass("active");
   }
 });
-
 $btn_consultation_send_data.on("click touch", function () {
-  const $button = $("#button");
+  var $button = $("#button");
   $button.text("Отправка...");
-
-  const name = $("#name").val();
-  const tel = $("#tel").val();
-  const message = $("#message").val();
-
-  const nameValidationCondition = name.length > 1;
+  var name = $("#name").val();
+  var tel = $("#tel").val();
+  var message = $("#message").val();
+  var nameValidationCondition = name.length > 1;
 
   if (!nameValidationCondition || !telValidation(tel)) {
     $(".labels").addClass("error");
@@ -151,35 +139,29 @@ $btn_consultation_send_data.on("click touch", function () {
     $(".labels").removeClass("error");
   }
 
-  const contactParams = {
-    name,
-    tel,
-    message,
+  var contactParams = {
+    name: name,
+    tel: tel,
+    message: message
   };
-
-  emailjs
-    .send("service_gsfx0qh", "template_ojdxnxi", contactParams)
-
-    .then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        $button.text("Отправлено");
-        $drop_modal_form.removeClass("active");
-        $("#name").val("");
-        $("#tel").val("");
-        $("#message").val("");
-      },
-      function (error) {
-        console.log("Ошибка...", error);
-        $button.text("Отправить");
-      }
-    );
+  emailjs.send("service_gsfx0qh", "template_ojdxnxi", contactParams).then(function (response) {
+    console.log("SUCCESS!", response.status, response.text);
+    $button.text("Отправлено");
+    $drop_modal_form.removeClass("active");
+    $("#name").val("");
+    $("#tel").val("");
+    $("#message").val("");
+  }, function (error) {
+    console.log("Ошибка...", error);
+    $button.text("Отправить");
+  });
 });
 
-for (let i = 0; i < $questionH3.length; i++) {
+for (var i = 0; i < $questionH3.length; i++) {
   $questionH3[i].addEventListener("click", function () {
     this.parentElement.classList.toggle("active");
     var panel = this.nextElementSibling;
+
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {

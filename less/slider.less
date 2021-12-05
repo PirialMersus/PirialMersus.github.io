@@ -185,8 +185,6 @@
         display: inline-block;
         align-self: center;
 
-
-
         h3 {
           padding: 0 10px;
           font-size: 42px;
@@ -194,7 +192,8 @@
           color: rgb(255, 255, 255);
           margin-bottom: 40px;
           // text-shadow: 1px 1px 2px black, 0 0 1em rgb(119, 109, 109);
-          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em rgb(119, 109, 109);
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+            0 0 1em rgb(119, 109, 109);
 
           span {
             text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -218,7 +217,6 @@
           text-align: center;
           margin-bottom: 20px;
           text-shadow: 1px 1px 2px black, 0 0 1em rgb(119, 109, 109);
-
         }
 
         p {
@@ -227,7 +225,6 @@
           font-size: 20px;
           margin-bottom: 10px;
           text-shadow: 1px 1px 2px black, 0 0 1em rgb(119, 109, 109);
-
         }
       }
     }
@@ -255,7 +252,7 @@
     &.right {
       right: 10px;
 
-      >img {
+      > img {
         transform: rotate(180deg);
       }
     }
@@ -264,7 +261,7 @@
       border-color: @btns_color;
     }
 
-    >img {
+    > img {
       width: 10px;
     }
   }
