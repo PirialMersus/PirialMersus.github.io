@@ -21,8 +21,10 @@ function telValidation(tel) {
   } else return true;
 }
 
-$(".parallax-window").parallax({ imageSrc: "/img/space.jpg" });
-// $(".our_projects").parallax({ imageSrc: "/img/karpatian8.jpg" });
+$(".reloading").parallax({ imageSrc: "/img/space.jpg" });
+$(".shedule").parallax({ imageSrc: "/img/space.jpg" });
+$(".gallery_section").parallax({ imageSrc: "/img/space.jpg" });
+$(".prices").parallax({ imageSrc: "/img/space.jpg" });
 
 $(".background_slider").slider({
   animationSpeed: 900,

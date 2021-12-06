@@ -9,7 +9,7 @@
   position: relative;
   z-index: 5;
   overflow: hidden;
-  height: 90vh;
+  height: 80vh;
 }
 .slider_container .wrp_text_appear {
   position: absolute;

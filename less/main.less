@@ -406,6 +406,7 @@ body {
         font-weight: 700;
         font-size: 40px;
         margin-bottom: 50px;
+        .textShadowWhite;
       }
 
       .advantagesBlock {
@@ -435,7 +436,7 @@ body {
             }
 
             &.img3 {
-              background-image: url(../img/girls.jpg);
+              background-image: url(../img/girl3.jpg);
             }
 
             // display: flex;
@@ -455,14 +456,20 @@ body {
             font-weight: 700;
             font-size: 24px;
             margin-bottom: 15px;
+            .textShadowWhite;
+            font-weight: 700;
           }
 
           ul {
-            list-style-type: decimal;
-            padding-left: 15px;
+            list-style-type: none;
+            // padding-left: 15px;
 
             li {
+              text-align: center;
+              font-weight: 700;
               margin-bottom: 10px;
+              .textShadowWhite;
+              font-weight: 700;
             }
           }
         }
@@ -474,8 +481,13 @@ body {
 // telegram
 
 .telegramSection {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
   overflow: hidden;
+  background-image: url(../img/niceBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .telegramContent {
     transform: translateX(120%);
@@ -498,11 +510,13 @@ body {
       h2 {
         font-size: 2em;
         margin-bottom: 10px;
+        .textShadowWhite;
       }
 
       p {
         font-size: 2em;
         font-weight: 900;
+        .textShadowWhite;
       }
     }
 
@@ -524,7 +538,7 @@ body {
 // shedule
 
 .shedule {
-  margin-bottom: 100px;
+  padding-top: 50px;
   overflow: hidden;
 
   .container {
@@ -542,6 +556,7 @@ body {
       text-align: center;
       font-size: 2em;
       margin-bottom: 20px;
+      .textShadowWhite;
     }
 
     .sheduleBox {
@@ -575,11 +590,13 @@ body {
             position: relative;
             z-index: 2;
             font-size: 1.5em;
+            .textShadowWhite;
           }
 
           &.active {
             a {
               color: #fff;
+              text-shadow: none;
             }
           }
 
@@ -643,11 +660,14 @@ body {
               font-size: 3em;
               color: #000;
               margin-bottom: 20px;
+              font-weight: 700;
             }
 
             p {
               color: #000;
               max-width: 450px;
+              .textShadowWhite;
+              font-weight: 700;
             }
           }
         }
@@ -659,6 +679,7 @@ body {
 // timer
 
 .timerSection {
+  display: none;
   background-image: url(../img/space.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -741,9 +762,9 @@ body {
 // gallery
 
 .gallery_section {
-  margin-bottom: 100px;
   box-sizing: border-box;
-  background-color: @sectionsBackgroundColor;
+  padding-bottom: 100px;
+  // background-color: @sectionsBackgroundColor;
 
   .container {
     text-align: center;
@@ -899,8 +920,7 @@ body {
 
 // our services
 .our_teachers_section {
-  background-color: @sectionsBackgroundColor;
-  margin-bottom: 100px;
+  background-color: #000;
   overflow: hidden;
 
   .our_teachers {
@@ -983,7 +1003,7 @@ body {
               z-index: 100;
               display: block;
               transition: all 0.3s ease;
-              background-color: @sectionsBackgroundColor;
+              background-color: #000;
 
               .p_number {
                 display: inline-block;
@@ -1023,7 +1043,7 @@ body {
 // our projects
 
 .our_projects {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
   // background-color: @sectionsBackgroundColor;
@@ -1055,6 +1075,11 @@ body {
         font-size: 40px;
         margin-bottom: 20px;
         color: #fff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 1),
+          0px 0px 12px rgba(0, 0, 0, 1), 2px 3px 14px rgba(0, 0, 0, 1),
+          0px 0px 15px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1),
+          0px 0px 25px rgba(0, 0, 0, 1), 0px 0px 30px rgba(0, 0, 0, 1),
+          0px 0px 30px rgba(0, 0, 0, 1), 0px 0px 40px rgba(0, 0, 0, 1);
       }
 
       .btn_consultation {
@@ -1073,7 +1098,8 @@ body {
 // prices
 
 .prices {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
 
   .container {
@@ -1092,6 +1118,7 @@ body {
       font-weight: 700;
       font-size: 40px;
       margin-bottom: 20px;
+      .textShadowWhite;
     }
 
     .pricesContainer {
@@ -1247,7 +1274,13 @@ body {
 // questions
 
 .questions {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  background-image: url(../img/niceBack2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   opacity: 0;
   transition: opacity 3s linear;
@@ -1261,6 +1294,7 @@ body {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px;
+    .textShadowWhite;
   }
 
   .questionBox {
@@ -1281,6 +1315,8 @@ body {
 
         p {
           height: 100%;
+          font-weight: 700;
+          .textShadowWhite;
         }
       }
     }
@@ -1336,7 +1372,6 @@ body {
 
 footer {
   background-color: @sectionsBackgroundColor;
-  margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
   overflow: hidden;

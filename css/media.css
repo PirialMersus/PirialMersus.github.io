@@ -39,14 +39,16 @@
     transform: translateY(60px) rotate(360deg) scale(3.5);
   }
   .telegramSection {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .telegramSection .telegramContent {
     flex-wrap: no-wrap;
     max-width: 100%;
   }
   .shedule {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .shedule .container .sheduleBox .sheduleContent {
     height: 200px;
@@ -121,7 +123,9 @@
     width: 100%;
   }
   .shedule {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
   }
   .shedule .container .sheduleBox .sheduleContent {
     height: 250px;
@@ -319,6 +323,7 @@
   }
   .shedule {
     padding: 0 20px;
+    padding-top: 50px;
   }
   .shedule .container .sheduleBox .sheduleHeader li {
     width: 90px;
@@ -418,7 +423,8 @@
 }
 @media (max-width: 350px) {
   .telegramSection {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .telegramSection .telegramContent {
     flex-wrap: wrap;

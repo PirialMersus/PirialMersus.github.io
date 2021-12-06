@@ -17,303 +17,299 @@
   </head>
 
   <body>
-    <div
-      class="parallax-window"
-      data-parallax="scroll"
-      data-image-src="./img/space.jpg"
-    >
-      <!-- drop_menu_for_mobile -->
+    <!-- drop_menu_for_mobile -->
 
-      <ul class="nav_bar">
+    <ul class="nav_bar">
+      <li><a href="#slider" class="scroll-to">Шапка</a></li>
+      <li><a href="#our_teachers" class="scroll-to">Преподаватели</a></li>
+      <li><a href="#prices" class="scroll-to">Цены</a></li>
+      <li><a href="#questions" class="scroll-to">Вопросы</a></li>
+      <li><a href="#contacts" class="scroll-to">Контакты</a></li>
+    </ul>
+
+    <!-- drop menu  -->
+
+    <div class="drop_modal_form">
+      <div class="close_wrp">
+        <p>close</p>
+        <img class="close_modal_form" src="img/icons/close_modal_form.svg" />
+      </div>
+      <div class="container">
+        <h3>Напишите нам для бесплатной консультации</h3>
+        <form action="form.php" method="post" class="application_form">
+          <div class="labels">
+            <p class="errorMessage">Проверьте корректность полей</p>
+            <label>
+              <p class="your_name">Ваше имя</p>
+              <input type="text" value size="40" name="name" id="name" />
+            </label>
+            <label>
+              <p class="your_phone">Ваш телефон</p>
+              <input type="tel" value size="40" name="phone" id="tel" />
+            </label>
+            <label>
+              <p class="your_message">Сообщение</p>
+              <textarea name="message" cols="100" rows="1" id="message">
+              </textarea>
+            </label>
+          </div>
+          <div class="form_btn_wrp">
+            <div class="btn_consultation_send_data">
+              <p id="button">Отправить</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- header  -->
+
+    <header class="site_header">
+      <img class="site_logo" src="./img/logo.png" alt="logo" />
+      <ul>
         <li><a href="#slider" class="scroll-to">Шапка</a></li>
+
         <li><a href="#our_teachers" class="scroll-to">Преподаватели</a></li>
         <li><a href="#prices" class="scroll-to">Цены</a></li>
         <li><a href="#questions" class="scroll-to">Вопросы</a></li>
         <li><a href="#contacts" class="scroll-to">Контакты</a></li>
       </ul>
-
-      <!-- drop menu  -->
-
-      <div class="drop_modal_form">
-        <div class="close_wrp">
-          <p>close</p>
-          <img class="close_modal_form" src="img/icons/close_modal_form.svg" />
-        </div>
-        <div class="container">
-          <h3>Напишите нам для бесплатной консультации</h3>
-          <form action="form.php" method="post" class="application_form">
-            <div class="labels">
-              <p class="errorMessage">Проверьте корректность полей</p>
-              <label>
-                <p class="your_name">Ваше имя</p>
-                <input type="text" value size="40" name="name" id="name" />
-              </label>
-              <label>
-                <p class="your_phone">Ваш телефон</p>
-                <input type="tel" value size="40" name="phone" id="tel" />
-              </label>
-              <label>
-                <p class="your_message">Сообщение</p>
-                <textarea name="message" cols="100" rows="1" id="message">
-                </textarea>
-              </label>
-            </div>
-            <div class="form_btn_wrp">
-              <div class="btn_consultation_send_data">
-                <p id="button">Отправить</p>
-              </div>
-            </div>
-          </form>
-        </div>
+      <div class="btn_consultation">
+        <p>Хочу с вами</p>
       </div>
+      <img src="./img/icons/Yoga-OM.svg" alt="" class="om" />
+      <div class="click_menu_wrp">
+        <img class="click_menu_img" src="./img/icons/menu.svg" />
+        <img src="img/icons/close.svg" alt="" class="click_menu_img_close" />
+      </div>
+    </header>
 
-      <!-- header  -->
+    <!-- slider -->
 
-      <header class="site_header">
-        <img class="site_logo" src="./img/logo.png" alt="logo" />
-        <ul>
-          <li><a href="#slider" class="scroll-to">Шапка</a></li>
-
-          <li><a href="#our_teachers" class="scroll-to">Преподаватели</a></li>
-          <li><a href="#prices" class="scroll-to">Цены</a></li>
-          <li><a href="#questions" class="scroll-to">Вопросы</a></li>
-          <li><a href="#contacts" class="scroll-to">Контакты</a></li>
-        </ul>
-        <div class="btn_consultation">
-          <p>Хочу с вами</p>
-        </div>
-        <img src="./img/icons/Yoga-OM.svg" alt="" class="om" />
-        <div class="click_menu_wrp">
-          <img class="click_menu_img" src="./img/icons/menu.svg" />
-          <img src="img/icons/close.svg" alt="" class="click_menu_img_close" />
-        </div>
-      </header>
-
-      <!-- slider -->
-
-      <div class="slider_container" id="slider">
-        <!-- <div class="wrp_text_appear">
+    <div class="slider_container" id="slider">
+      <!-- <div class="wrp_text_appear">
         <p id="text_appear_1">YOGA</p>
         <p id="text_appear_2">DHARMA</p>
         <p id="text_appear_3">SAMADHI</p>
       </div> -->
-        <div class="slides_row">
-          <div
-            class="slide"
-            data_attr="1"
-            style="
-              background-image: url(img/meditatsiya-na-vershine-gori-priroda-krasi-2.jpg);
-              background-position: left center;
-            "
-          >
-            <div class="sliderContent">
-              <h3>
-                7 дней полной перезагрузки<br />
-                в Карпатах
-              </h3>
-              <h4>ЙОГА ♥️ LOVE ♥️ ЛЫЖИ</h4>
-              <p>13 - 19 февраля</p>
-              <p>Осталось 8 мест из 15</p>
-            </div>
-          </div>
-          <div
-            class="slide alexInna"
-            data_attr="2"
-            style="background-image: url(img/AlexAndInna.jpg)"
-          >
-            <div class="sliderContent">
-              <h3>
-                Почувствуй нашу любовь<br />
-                ЛЕКЦИЯ
-              </h3>
-              <h4>Теория гармоничных отношений</h4>
-              <p class="date"></p>
-            </div>
-          </div>
-          <div
-            class="slide alex"
-            data_attr="3"
-            style="background-image: url(img/SanyaSnow.jpg)"
-          >
-            <div class="sliderContent">
-              <h3>
-                А ты что выберешь, <span>лыжи</span> или <span>борд</span>?
-              </h3>
-            </div>
+      <div class="slides_row">
+        <div
+          class="slide alex"
+          data_attr="1"
+          style="background-image: url(img/SanyaSnow.jpg)"
+        >
+          <div class="sliderContent">
+            <h3>А ты что выберешь, <span>лыжи</span> или <span>борд</span>?</h3>
           </div>
         </div>
-        <a class="arrows left"><img src="img/icons/arro-left.svg" alt="" /></a>
-        <a class="arrows right"><img src="img/icons/arro-left.svg" alt="" /></a>
-        <div class="navigation"></div>
+        <div
+          class="slide"
+          data_attr="2"
+          style="
+            background-image: url(img/meditatsiya-na-vershine-gori-priroda-krasi-2.jpg);
+            background-position: left center;
+          "
+        >
+          <div class="sliderContent">
+            <h3>
+              7 дней полной перезагрузки<br />
+              в Карпатах
+            </h3>
+            <h4>ЙОГА ♥️ LOVE ♥️ ЛЫЖИ</h4>
+            <p>13 - 19 февраля</p>
+            <p>Осталось 8 мест из 15</p>
+          </div>
+        </div>
+        <div
+          class="slide alexInna"
+          data_attr="3"
+          style="background-image: url(img/AlexAndInna.jpg)"
+        >
+          <div class="sliderContent">
+            <h3>
+              Почувствуй нашу любовь<br />
+              ЛЕКЦИЯ
+            </h3>
+            <h4>Теория гармоничных отношений</h4>
+            <p class="date"></p>
+          </div>
+        </div>
       </div>
+      <a class="arrows left"><img src="img/icons/arro-left.svg" alt="" /></a>
+      <a class="arrows right"><img src="img/icons/arro-left.svg" alt="" /></a>
+      <div class="navigation"></div>
+    </div>
 
-      <!-- reloading section -->
+    <!-- reloading section -->
 
-      <section class="reloading">
-        <div class="container">
-          <div
-            class="soulReloadingBlock"
-            data-scroll="scully"
-            data-scroll-repeat="true"
-            data-scroll-reverse="true"
-          >
-            <h2>Отдых для души и тела</h2>
-            <div class="advantagesBlock">
-              <div class="advantageDiv">
-                <div class="img img1">
-                  <!-- <img src="/img/icons/yoga-symbolism-buddha-tree.jpg" alt="yoga" /> -->
-                </div>
-                <h5>Душа</h5>
-                <ul>
-                  <li>Энергетическая прокачка</li>
-                  <li>Поиск себя</li>
-                </ul>
-              </div>
-              <div class="advantageDiv">
-                <div class="img img2">
-                  <!-- <img src="/img/icons/beauty.jpg" alt="yoga" /> -->
-                </div>
-                <h5>Дух</h5>
-                <ul>
-                  <li>Укрепление мужского стержня</li>
-                  <li>Раскрытие женственности</li>
-                </ul>
-              </div>
-              <div class="advantageDiv">
-                <div class="img img3">
-                  <!-- <img src="/img/girls.jpg" alt="yoga" /> -->
-                </div>
-                <h5>Тело</h5>
-                <ul>
-                  <li>Свежий воздух и вкуснейшая кухня</li>
-                  <li>Физические нагрузки</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- reloading section -->
-
-      <!-- our projects -->
-
-      <section class="our_projects">
+    <section
+      class="reloading"
+      data-parallax="scroll"
+      data-image-src="./img/space.jpg"
+    >
+      <div class="container">
         <div
-          class="container"
+          class="soulReloadingBlock"
           data-scroll="scully"
           data-scroll-repeat="true"
           data-scroll-reverse="true"
         >
-          <div class="our_projects_text">
-            <h2>Просмотреть остальные видео</h2>
-            <div class="btn_consultation">
-              <p>Присоединиться →</p>
+          <h2>Отдых для души и тела</h2>
+          <div class="advantagesBlock">
+            <div class="advantageDiv">
+              <div class="img img1">
+                <!-- <img src="/img/icons/yoga-symbolism-buddha-tree.jpg" alt="yoga" /> -->
+              </div>
+              <h5>Душа</h5>
+              <ul>
+                <li>Энергетическая прокачка</li>
+                <li>Поиск себя</li>
+              </ul>
             </div>
-          </div>
-          <div class="our_projects_vid">
-            <div class="iframeBox">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/BLOV3RJ-j6Q"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              >
-              </iframe>
+            <div class="advantageDiv">
+              <div class="img img2">
+                <!-- <img src="/img/icons/beauty.jpg" alt="yoga" /> -->
+              </div>
+              <h5>Дух</h5>
+              <ul>
+                <li>Укрепление мужского стержня</li>
+                <li>Раскрытие женственности</li>
+              </ul>
+            </div>
+            <div class="advantageDiv">
+              <div class="img img3">
+                <!-- <img src="/img/girls.jpg" alt="yoga" /> -->
+              </div>
+              <h5>Тело</h5>
+              <ul>
+                <li>Свежий воздух и вкуснейшая кухня</li>
+                <li>Физические нагрузки</li>
+                <li>Баня/сайна/чан</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- shedule -->
+    <!-- reloading section -->
 
-      <section
-        class="shedule parallax-window"
-        data-parallax="scroll"
-        data-image-src="./img/space.jpg"
+    <!-- our projects -->
+
+    <section class="our_projects">
+      <div
+        class="container"
+        data-scroll="scully"
+        data-scroll-repeat="true"
+        data-scroll-reverse="true"
       >
-        <div
-          class="container"
-          data-scroll="scully"
-          data-scroll-repeat="true"
-          data-scroll-reverse="true"
-        >
-          <h2>Все еще думаешь, как с пользой провести зиму?</h2>
-          <div class="sheduleBox">
-            <ul class="sheduleHeader">
-              <li class="active" data-id="content1"><a>Лыжи</a></li>
-              <li data-id="content2"><a>Лекции</a></li>
-              <li data-id="content3"><a>Йога</a></li>
-              <li class="backgroundSlide"></li>
-            </ul>
-            <div class="sheduleContent">
-              <div class="contentBox active" id="content1">
-                <div class="text">
-                  <h2>Лыжи</h2>
-                  <p>
-                    Мы будем кататься на разных горах.<br />
-                    Этот тур подойдет для тех, кто хочет научится кататься.<br />
-                    А также для тех кто обьездил Буковель вдоль и поперек и
-                    хочет обкатать новые трассы в хорошей компании.
-                  </p>
-                </div>
+        <div class="our_projects_text">
+          <h2>Просмотреть остальные видео</h2>
+          <div class="btn_consultation">
+            <p>Присоединиться →</p>
+          </div>
+        </div>
+        <div class="our_projects_vid">
+          <div class="iframeBox">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/PqvRtEe9iyo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- shedule -->
+
+    <section
+      class="shedule"
+      data-parallax="scroll"
+      data-image-src="./img/space.jpg"
+    >
+      <div
+        class="container"
+        data-scroll="scully"
+        data-scroll-repeat="true"
+        data-scroll-reverse="true"
+      >
+        <h2>Все еще думаешь, как с пользой провести зиму?</h2>
+        <div class="sheduleBox">
+          <ul class="sheduleHeader">
+            <li class="active" data-id="content1"><a>Лыжи</a></li>
+            <li data-id="content2"><a>Лекции</a></li>
+            <li data-id="content3"><a>Йога</a></li>
+            <li class="backgroundSlide"></li>
+          </ul>
+          <div class="sheduleContent">
+            <div class="contentBox active" id="content1">
+              <div class="text">
+                <h2>Лыжи</h2>
+                <p>
+                  Мы будем кататься на разных горах.<br />
+                  Этот тур подойдет для тех, кто хочет научится кататься.<br />
+                  А также для тех кто обьездил Буковель вдоль и поперек и хочет
+                  обкатать новые трассы в хорошей компании.
+                </p>
               </div>
-              <div class="contentBox" id="content2">
-                <div class="text">
-                  <h2>Семинары</h2>
-                  <p>
-                    Мы проведем практики на гармонизацию состояния, а также
-                    лучшего понимания противоположного пола.<br />
-                    Поговорим об отношениях и о том как построить их
-                    качественно.
-                  </p>
-                </div>
+            </div>
+            <div class="contentBox" id="content2">
+              <div class="text">
+                <h2>Семинары</h2>
+                <p>
+                  Мы проведем практики на гармонизацию состояния, а также
+                  лучшего понимания противоположного пола.<br />
+                  Поговорим об отношениях и о том как построить их качественно.
+                </p>
               </div>
-              <div class="contentBox" id="content3">
-                <div class="text">
-                  <h2>Йога</h2>
-                  <p>
-                    Наши тренера проведут комплекс тренировок по хатха йоге.<br />
-                    Новички смогут погрузится в свой внутренний мир, а
-                    продвинутые практики наполниться энергией ежедневных
-                    тренировок.
-                  </p>
-                </div>
+            </div>
+            <div class="contentBox" id="content3">
+              <div class="text">
+                <h2>Йога</h2>
+                <p>
+                  Наши тренера проведут комплекс тренировок по хатха йоге.<br />
+                  Новички смогут погрузится в свой внутренний мир, а продвинутые
+                  практики наполниться энергией ежедневных тренировок.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- timer -->
+    <!-- timer -->
 
-      <section class="timerSection">
-        <div
-          class="container"
-          data-scroll="scully"
-          data-scroll-repeat="true"
-          data-scroll-reverse="true"
+    <section class="timerSection">
+      <div
+        class="container"
+        data-scroll="scully"
+        data-scroll-repeat="true"
+        data-scroll-reverse="true"
+      >
+        <a
+          href="https://logwork.com/countdown-rkz4"
+          class="countdown-timer"
+          data-timezone="Europe/Simferopol"
+          data-language="ru"
+          data-textcolor="#ffffff"
+          onclick="return false"
+          data-date="2022-01-01 00:00"
+          data-background="#000000"
+          data-unitscolor="#ffffff"
+          >До нового года осталось</a
         >
-          <a
-            href="https://logwork.com/countdown-rkz4"
-            class="countdown-timer"
-            data-timezone="Europe/Simferopol"
-            data-language="ru"
-            data-textcolor="#ffffff"
-            onclick="return false"
-            data-date="2022-01-01 00:00"
-            data-background="#000000"
-            data-unitscolor="#ffffff"
-            >До нового года осталось</a
-          >
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- telegram section -->
-      <section class="telegramSection container">
+    <!-- telegram section -->
+    <section class="telegramSection">
+      <div class="container">
         <div
           class="telegramContent"
           data-scroll="scully"
@@ -321,7 +317,7 @@
           data-scroll-reverse="true"
         >
           <div class="textContent">
-            <h2>Подпишись и получи один из двух бонусов<br /></h2>
+            <h2>Подпишись и получи бонус - бесплатное занятие со мной<br /></h2>
             <p class="boltSpan">наш Telegram-канал</p>
           </div>
           <div class="arrow">
@@ -346,45 +342,44 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- nature gallery -->
+    <!-- nature gallery -->
 
-      <section class="gallery_section">
-        <div
-          class="container"
-          data-scroll="scully"
-          data-scroll-repeat="true"
-          data-scroll-reverse="true"
-        >
-          <div class="gallery">
-            <div class="galleryBox">
-              <h2>Наши фотки</h2>
-              <span style="--i: 1"
-                ><img src="img/3onSnow.jpg" alt="Горы"
-              /></span>
-              <span style="--i: 2"
-                ><img src="img/4hands.jpg" alt="Горы"
-              /></span>
-              <span style="--i: 3"
-                ><img src="img/fingers.jpg" alt="Горы"
-              /></span>
-              <span style="--i: 4"><img src="img/gues.jpg" alt="Горы" /></span>
-              <span style="--i: 5"><img src="img/art.jpg" alt="Горы" /></span>
-              <span style="--i: 6"><img src="img/lift.jpg" alt="Горы" /></span>
-              <span style="--i: 7"><img src="img/top.jpg" alt="Горы" /></span>
-              <span style="--i: 8"><img src="img/wall.jpg" alt="Горы" /></span>
-            </div>
-          </div>
-          <div class="btn_consultation">
-            <p>Хочу с вами →</p>
+    <section
+      class="gallery_section"
+      data-parallax="scroll"
+      data-image-src="./img/space.jpg"
+    >
+      <div
+        class="container"
+        data-scroll="scully"
+        data-scroll-repeat="true"
+        data-scroll-reverse="true"
+      >
+        <div class="gallery">
+          <div class="galleryBox">
+            <h2>Наши фотки</h2>
+            <span style="--i: 1"><img src="img/3onSnow.jpg" alt="Горы" /></span>
+            <span style="--i: 2"><img src="img/4hands.jpg" alt="Горы" /></span>
+            <span style="--i: 3"><img src="img/fingers.jpg" alt="Горы" /></span>
+            <span style="--i: 4"><img src="img/gues.jpg" alt="Горы" /></span>
+            <span style="--i: 5"><img src="img/art.jpg" alt="Горы" /></span>
+            <span style="--i: 6"><img src="img/lift.jpg" alt="Горы" /></span>
+            <span style="--i: 7"><img src="img/top.jpg" alt="Горы" /></span>
+            <span style="--i: 8"><img src="img/wall.jpg" alt="Горы" /></span>
           </div>
         </div>
-      </section>
+        <div class="btn_consultation">
+          <p>Хочу с вами →</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- nature gallery -->
+    <!-- nature gallery -->
 
-      <!-- <section class="gallery">
+    <!-- <section class="gallery">
     <div class="container">
       <div class="galleryBox">
         <div class="box"><img src="img/karpatian1.jpg" alt="Горы" /></div>
@@ -398,176 +393,182 @@
     </div>
   </section> -->
 
-      <!-- our services -->
+    <!-- our services -->
 
-      <section class="our_teachers_section" id="our_teachers">
-        <div class="container">
-          <div
-            class="our_teachers"
-            data-scroll="scully"
-            data-scroll-repeat="true"
-            data-scroll-reverse="true"
-          >
-            <div class="our_teachers_text_column">
-              <div class="our_teachers_text_column_inner_wrp">
-                <h4>Наши преподаватели:</h4>
-                <div class="related_links">
-                  <div class="our_teachers_link_wrp">
-                    <a
-                      class="our_teachers_link"
-                      data-attr="1"
-                      href="https://www.instagram.com/helenyogateacher/"
-                    >
-                      <p class="p_number">00</p>
-                      <p class="p_text">Алена</p>
-                    </a>
-                    <a
-                      class="our_teachers_inner_link"
-                      href="https://www.instagram.com/helenyogateacher/"
-                      >→</a
-                    >
-                  </div>
-                  <div class="our_teachers_link_wrp">
-                    <a
-                      class="our_teachers_link"
-                      data-attr="2"
-                      href="https://www.instagram.com/alexandr.yoga/"
-                    >
-                      <p class="p_number">01</p>
-                      <p class="p_text">Александр</p>
-                    </a>
-                    <a
-                      class="our_teachers_inner_link"
-                      href="https://www.instagram.com/alexandr.yoga/"
-                      >→</a
-                    >
-                  </div>
-                  <div class="our_teachers_link_wrp">
-                    <a
-                      class="our_teachers_link"
-                      data-attr="3"
-                      href="https://www.instagram.com/art._.partner/"
-                    >
-                      <p class="p_number">02</p>
-                      <p class="p_text">Артем</p>
-                    </a>
-                    <a
-                      class="our_teachers_inner_link"
-                      href="https://www.instagram.com/art._.partner/"
-                      >→</a
-                    >
-                  </div>
-                  <div class="our_teachers_link_wrp">
-                    <a
-                      class="our_teachers_link"
-                      data-attr="4"
-                      href="https://www.instagram.com/gennadii_yds/"
-                    >
-                      <p class="p_number">03</p>
-                      <p class="p_text">Гена</p>
-                    </a>
-                    <a
-                      class="our_teachers_inner_link"
-                      href="https://www.instagram.com/gennadii_yds/"
-                      >→</a
-                    >
-                  </div>
-                  <div class="our_teachers_link_wrp">
-                    <a
-                      class="our_teachers_link"
-                      data-attr="5"
-                      href="https://www.instagram.com/yogadharmasamadhi/"
-                    >
-                      <p class="p_number">04</p>
-                      <p class="p_text">Школа YDS</p>
-                    </a>
-                    <a
-                      class="our_teachers_inner_link"
-                      href="https://www.instagram.com/yogadharmasamadhi/"
-                      >→</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- cost -->
-      <section class="prices" id="prices">
+    <section class="our_teachers_section" id="our_teachers">
+      <div class="container">
         <div
-          class="container"
+          class="our_teachers"
           data-scroll="scully"
           data-scroll-repeat="true"
           data-scroll-reverse="true"
         >
-          <h1>Пакеты</h1>
-          <div class="pricesContainer">
-            <div class="card">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div class="content">
-                <h2>01</h2>
-                <h3>Локация Славское</h3>
-                <p class="cardText">
-                  аванс 1000 в стоимость входит не входит до 5500 с чела до НГ
-                  Проживание ЖД Билеты до 5600 с чела до 15.01 Трансфер в
-                  гостиницу с вокзала
-                </p>
-                <div class="btn_consultation">
-                  <p>Read more</p>
+          <div class="our_teachers_text_column">
+            <div class="our_teachers_text_column_inner_wrp">
+              <h4>Наши преподаватели:</h4>
+              <div class="related_links">
+                <div class="our_teachers_link_wrp">
+                  <a
+                    class="our_teachers_link"
+                    data-attr="1"
+                    href="https://www.instagram.com/helenyogateacher/"
+                  >
+                    <p class="p_number">00</p>
+                    <p class="p_text">Алена</p>
+                  </a>
+                  <a
+                    class="our_teachers_inner_link"
+                    href="https://www.instagram.com/helenyogateacher/"
+                    >→</a
+                  >
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div class="content">
-                <h2>02</h2>
-                <h3>Скейпасы</h3>
-                <p class="cardText">
-                  до 5800 с чела до 01,02 Тренировки по йоге аренда лыж до 6000
-                  с чела с 01,02 Все практики семинара прочие
-                </p>
-                <div class="btn_consultation">
-                  <p>Read more</p>
+                <div class="our_teachers_link_wrp">
+                  <a
+                    class="our_teachers_link"
+                    data-attr="2"
+                    href="https://www.instagram.com/alexandr.yoga/"
+                  >
+                    <p class="p_number">01</p>
+                    <p class="p_text">Александр</p>
+                  </a>
+                  <a
+                    class="our_teachers_inner_link"
+                    href="https://www.instagram.com/alexandr.yoga/"
+                    >→</a
+                  >
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div class="content">
-                <h2>03</h2>
-                <h3>Развлечения на курорте</h3>
-                <p class="cardText">
-                  билеты отдельно питание скидка 1000 грн парам на двоих
-                </p>
-                <div class="btn_consultation">
-                  <p>Read more</p>
+                <div class="our_teachers_link_wrp">
+                  <a
+                    class="our_teachers_link"
+                    data-attr="3"
+                    href="https://www.instagram.com/art._.partner/"
+                  >
+                    <p class="p_number">02</p>
+                    <p class="p_text">Артем</p>
+                  </a>
+                  <a
+                    class="our_teachers_inner_link"
+                    href="https://www.instagram.com/art._.partner/"
+                    >→</a
+                  >
+                </div>
+                <div class="our_teachers_link_wrp">
+                  <a
+                    class="our_teachers_link"
+                    data-attr="4"
+                    href="https://www.instagram.com/gennadii_yds/"
+                  >
+                    <p class="p_number">03</p>
+                    <p class="p_text">Гена</p>
+                  </a>
+                  <a
+                    class="our_teachers_inner_link"
+                    href="https://www.instagram.com/gennadii_yds/"
+                    >→</a
+                  >
+                </div>
+                <div class="our_teachers_link_wrp">
+                  <a
+                    class="our_teachers_link"
+                    data-attr="5"
+                    href="https://www.instagram.com/yogadharmasamadhi/"
+                  >
+                    <p class="p_number">04</p>
+                    <p class="p_text">Школа YDS</p>
+                  </a>
+                  <a
+                    class="our_teachers_inner_link"
+                    href="https://www.instagram.com/yogadharmasamadhi/"
+                    >→</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- questions -->
-
-      <section
-        class="questions container"
-        id="questions"
+    <!-- cost -->
+    <section
+      class="prices"
+      id="prices"
+      data-parallax="scroll"
+      data-image-src="./img/space.jpg"
+    >
+      <div
+        class="container"
         data-scroll="scully"
         data-scroll-repeat="true"
         data-scroll-reverse="true"
       >
+        <h1>Пакеты</h1>
+        <div class="pricesContainer">
+          <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+              <h2>01</h2>
+              <h3>Локация Славское</h3>
+              <p class="cardText">
+                аванс 1000 в стоимость входит не входит до 5500 с чела до НГ
+                Проживание ЖД Билеты до 5600 с чела до 15.01 Трансфер в
+                гостиницу с вокзала
+              </p>
+              <div class="btn_consultation">
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+              <h2>02</h2>
+              <h3>Скейпасы</h3>
+              <p class="cardText">
+                до 5800 с чела до 01,02 Тренировки по йоге аренда лыж до 6000 с
+                чела с 01,02 Все практики семинара прочие
+              </p>
+              <div class="btn_consultation">
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+              <h2>03</h2>
+              <h3>Развлечения на курорте</h3>
+              <p class="cardText">
+                билеты отдельно питание скидка 1000 грн парам на двоих
+              </p>
+              <div class="btn_consultation">
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- questions -->
+
+    <section
+      class="questions"
+      id="questions"
+      data-scroll="scully"
+      data-scroll-repeat="true"
+      data-scroll-reverse="true"
+    >
+      <div class="container">
         <h1>Часто задаваемые вопросы</h1>
         <div class="questionBox">
           <h3 class="questionH3"><label for="faq-1">Кто вы ?</label></h3>
@@ -610,45 +611,45 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- footer -->
+    <!-- footer -->
 
-      <footer
-        id="contacts"
-        data-scroll="scully"
-        data-scroll-repeat="true"
-        data-scroll-reverse="true"
-      >
-        <div class="container">
-          <div class="copyright">
-            <img src="./img/logo1.png" alt="logo" />
-            <p>© 2021 YogaDharmaSamadhi</p>
+    <footer
+      id="contacts"
+      data-scroll="scully"
+      data-scroll-repeat="true"
+      data-scroll-reverse="true"
+    >
+      <div class="container">
+        <div class="copyright">
+          <img src="./img/logo1.png" alt="logo" />
+          <p>© 2021 YogaDharmaSamadhi</p>
+        </div>
+        <div class="phone_mail_wrap">
+          <div class="first_line">
+            <a class="phone" href="tel:+380967777777">(096)-777-77-77</a>
+            <p class="slash">/</p>
           </div>
-          <div class="phone_mail_wrap">
-            <div class="first_line">
-              <a class="phone" href="tel:+380967777777">(096)-777-77-77</a>
-              <p class="slash">/</p>
-            </div>
-            <p class="mail">yogadharmasamadhi@gmail.com</p>
-            <div class="copyright_plus_insta">
-              <p>© 2021 YogaDharmaSamadhi</p>
-              <div class="icons">
-                <a href="https://www.instagram.com/yogadharmasamadhi/">
-                  <img
-                    src="img/icons/Instagram-icon-PNG.png"
-                    alt="Мы в инстаграмм"
-                  />
-                </a>
-                <a href="https://t.me/art_partner">
-                  <img src="img/icons/telegr.png" alt="Мы в инстаграмм" />
-                </a>
-              </div>
+          <p class="mail">yogadharmasamadhi@gmail.com</p>
+          <div class="copyright_plus_insta">
+            <p>© 2021 YogaDharmaSamadhi</p>
+            <div class="icons">
+              <a href="https://www.instagram.com/yogadharmasamadhi/">
+                <img
+                  src="img/icons/Instagram-icon-PNG.png"
+                  alt="Мы в инстаграмм"
+                />
+              </a>
+              <a href="https://t.me/art_partner">
+                <img src="img/icons/telegr.png" alt="Мы в инстаграмм" />
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <script src="./js/onScroll.js"></script>
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
     <script
