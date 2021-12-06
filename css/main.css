@@ -211,10 +211,10 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #5f5a5a;
-  background-color: rgba(102, 17, 102, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .site_header.scroll {
-  background-color: #000;
+  background-color: #202020;
   border-bottom: 1px solid #000;
 }
 .site_header .site_logo {
@@ -349,7 +349,7 @@ body {
   background-image: url(../img/icons/beauty.jpg);
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img.img3 {
-  background-image: url(../img/girl3.jpg);
+  background-image: url(../img/sauna.jpg);
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv h5 {
   text-align: center;
@@ -663,7 +663,7 @@ body {
   line-height: 40px;
 }
 .our_teachers_section {
-  background-color: #000;
+  background-color: #202020;
   overflow: hidden;
 }
 .our_teachers_section .our_teachers {
@@ -1017,6 +1017,7 @@ body {
 }
 .questions .questionBox .answer p {
   padding: 2em;
+  transition: 0.5s all ease;
 }
 .questions .questionBox .answer p a {
   color: #00a8ff;
