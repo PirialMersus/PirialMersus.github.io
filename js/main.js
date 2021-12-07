@@ -21,10 +21,10 @@ function telValidation(tel) {
   } else return true;
 }
 
-$(".reloading").parallax({ imageSrc: "/img/space.jpg" });
-$(".shedule").parallax({ imageSrc: "/img/space.jpg" });
-$(".gallery_section").parallax({ imageSrc: "/img/space.jpg" });
-$(".prices").parallax({ imageSrc: "/img/space.jpg" });
+$(".reloading").parallax({ imageSrc: "/img/mountQuolity.jpg" });
+$(".shedule").parallax({ imageSrc: "/img/mountQuolity.jpg" });
+$(".gallery_section").parallax({ imageSrc: "/img/mountQuolity.jpg" });
+$(".prices").parallax({ imageSrc: "/img/mountQuolity.jpg" });
 
 $(".background_slider").slider({
   animationSpeed: 900,

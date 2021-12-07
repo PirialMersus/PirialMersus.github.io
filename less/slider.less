@@ -174,7 +174,7 @@
       justify-content: center;
 
       &.alex {
-        background-position: right bottom;
+        background-position: center bottom;
       }
 
       &.alexInna {
@@ -183,7 +183,8 @@
 
       .sliderContent {
         display: inline-block;
-        align-self: center;
+        align-self: flex-start;
+        margin-top: 10%;
 
         h3 {
           padding: 0 10px;
@@ -306,17 +307,48 @@
   }
 }
 
+@media (max-width: 900px) {
+  .slider_container {
+    .slides_row {
+      .slide {
+        .sliderContent {
+          h4 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+        // &.alex {
+        //   background-position: 75% 20%;
+        // }
+
+        // &.alexInna {
+        //   background-position: 13% 20%;
+        // }
+      }
+    }
+  }
+}
 @media (max-width: 600px) {
   .slider_container {
     .slides_row {
       .slide {
-        &.alex {
-          background-position: 75% 20%;
+        .sliderContent {
+          h4 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 14px;
+          }
         }
+        // &.alex {
+        //   background-position: 75% 20%;
+        // }
 
-        &.alexInna {
-          background-position: 13% 20%;
-        }
+        // &.alexInna {
+        //   background-position: 13% 20%;
+        // }
       }
     }
   }

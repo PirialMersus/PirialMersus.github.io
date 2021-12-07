@@ -25,16 +25,16 @@ function telValidation(tel) {
 }
 
 $(".reloading").parallax({
-  imageSrc: "/img/space.jpg"
+  imageSrc: "/img/mountQuolity.jpg"
 });
 $(".shedule").parallax({
-  imageSrc: "/img/space.jpg"
+  imageSrc: "/img/mountQuolity.jpg"
 });
 $(".gallery_section").parallax({
-  imageSrc: "/img/space.jpg"
+  imageSrc: "/img/mountQuolity.jpg"
 });
 $(".prices").parallax({
-  imageSrc: "/img/space.jpg"
+  imageSrc: "/img/mountQuolity.jpg"
 });
 $(".background_slider").slider({
   animationSpeed: 900

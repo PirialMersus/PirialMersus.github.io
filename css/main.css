@@ -1,6 +1,9 @@
 .textShadowWhite {
   text-shadow: -1px 2px 5px #ffffff, 0px 0px 10px #ffffff, 1px 2px 12px #ffffff, 2px 3px 14px #ffffff, 4px 5px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff, 0px 0px 30px #ffffff, 0px 0px 30px #ffffff, 0px 0px 40px #ffffff;
 }
+.textShadowBlack {
+  text-shadow: 0px 0px 10px #000000, 0px 0px 12px #000000, 2px 3px 14px #000000, 0px 0px 15px #000000, 0px 0px 20px #000000, 0px 0px 25px #000000, 0px 0px 30px #000000, 0px 0px 30px #000000, 0px 0px 40px #000000;
+}
 html,
 body {
   margin: 0;
@@ -318,11 +321,12 @@ body {
   opacity: 1;
 }
 .reloading .container .soulReloadingBlock h2 {
+  color: #fff;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 50px;
-  text-shadow: -1px 2px 5px #ffffff, 0px 0px 10px #ffffff, 1px 2px 12px #ffffff, 2px 3px 14px #ffffff, 4px 5px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff, 0px 0px 30px #ffffff, 0px 0px 30px #ffffff, 0px 0px 40px #ffffff;
+  text-shadow: 0px 0px 10px #000000, 0px 0px 12px #000000, 2px 3px 14px #000000, 0px 0px 15px #000000, 0px 0px 20px #000000, 0px 0px 25px #000000, 0px 0px 30px #000000, 0px 0px 30px #000000, 0px 0px 40px #000000;
 }
 .reloading .container .soulReloadingBlock .advantagesBlock {
   display: flex;
@@ -828,12 +832,12 @@ body {
 }
 .prices .container .pricesContainer .card {
   position: relative;
+  padding-top: 40px;
   width: 300px;
   height: 400px;
   background: #0c002b;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -900,6 +904,12 @@ body {
   transition: 0.5s;
   margin-bottom: 30px;
 }
+.prices .container .pricesContainer .card .content .btn_consultation {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .prices .container .pricesContainer .card .content .btn_consultation p {
   line-height: 40px;
 }
@@ -962,7 +972,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-shadow: -1px 2px 5px #ffffff, 0px 0px 10px #ffffff, 1px 2px 12px #ffffff, 2px 3px 14px #ffffff, 4px 5px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff, 0px 0px 30px #ffffff, 0px 0px 30px #ffffff, 0px 0px 40px #ffffff;
 }
 .questions .questionBox {
