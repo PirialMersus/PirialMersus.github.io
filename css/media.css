@@ -51,7 +51,7 @@
     padding-right: 20px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 200px;
+    height: 320px;
   }
   .timerSection {
     margin-left: 20px;
@@ -128,7 +128,7 @@
     padding-top: 50px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 250px;
+    height: 400px;
   }
   .shedule .container .sheduleBox .sheduleContent .contentBox .text {
     padding: 0 20px;
@@ -341,7 +341,7 @@
     left: 180px;
   }
   .shedule .container .sheduleBox .sheduleContent {
-    height: 350px;
+    height: 500px;
   }
   .shedule .container .sheduleBox .sheduleContent .contentBox .text {
     padding: 0;

@@ -102,10 +102,10 @@ body {
   display: block;
 }
 .drop_modal_form .container form .labels.error label > p {
-  text-shadow: #fb2f2f;
+  text-shadow: #36b8ab;
 }
 .drop_modal_form .container form .labels.error label > input {
-  box-shadow: 0px 0px 5px #fb2f2f, 0px 0px 5px #fb2f2f, 0px 0px 5px #fb2f2f;
+  box-shadow: 0px 0px 5px #36b8ab, 0px 0px 5px #36b8ab, 0px 0px 5px #36b8ab;
 }
 .drop_modal_form .container form .labels .errorMessage {
   text-align: center;
@@ -113,7 +113,7 @@ body {
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fb2f2f;
+  color: #36b8ab;
   text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
   display: none;
 }
@@ -176,7 +176,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
   transform: translateX(100%);
 }
 .drop_modal_form .container form .form_btn_wrp .btn_consultation_send_data:after {
@@ -187,7 +187,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
   z-index: 4;
 }
 .drop_modal_form .container form .form_btn_wrp .btn_consultation_send_data p {
@@ -242,7 +242,7 @@ body {
   line-height: 60px;
 }
 .site_header ul li a:hover {
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 .site_header ul li:last-child {
   margin-right: 0px;
@@ -285,7 +285,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
   transform: translateX(100%);
 }
 .btn_consultation:after {
@@ -296,7 +296,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
   z-index: 4;
 }
 .btn_consultation p {
@@ -475,7 +475,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
   transition: 0.5s;
   opacity: 0;
 }
@@ -493,7 +493,7 @@ body {
 }
 .shedule .container .sheduleBox .sheduleContent {
   position: relative;
-  height: 170px;
+  height: 300px;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox {
   position: absolute;
@@ -519,7 +519,7 @@ body {
   text-align: center;
 }
 .shedule .container .sheduleBox .sheduleContent .contentBox .text h2 {
-  font-size: 3em;
+  font-size: 22px;
   color: #000;
   margin-bottom: 20px;
   font-weight: 700;
@@ -572,7 +572,7 @@ body {
   text-align: center;
 }
 .wellcome .container .wellcome_text h2 span {
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 .wellcome .container .wellcome_text .wellcome_text_p {
   max-width: 95%;
@@ -695,7 +695,7 @@ body {
   line-height: 1.2;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .read_more {
-  color: #fb2f2f;
+  color: #36b8ab;
   margin-left: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -722,7 +722,7 @@ body {
   cursor: pointer;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link {
-  background-color: #fb2f2f;
+  background-color: #36b8ab;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column .our_teachers_text_column_inner_wrp .related_links .our_teachers_link_wrp:hover .our_teachers_link .p_number {
   color: #fff;
@@ -855,7 +855,7 @@ body {
 }
 .prices .container .pricesContainer .card:hover .content h3 {
   opacity: 1;
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 .prices .container .pricesContainer .card:hover .content p {
   opacity: 1;
@@ -879,7 +879,7 @@ body {
   right: 30px;
   font-size: 4em;
   font-weight: 800px;
-  color: #fb2f2f;
+  color: #36b8ab;
   z-index: 1;
   opacity: 0.1;
   transition: 0.5s;
@@ -906,7 +906,7 @@ body {
 }
 .prices .container .pricesContainer .card .content .btn_consultation {
   position: absolute;
-  bottom: 60px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -923,7 +923,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, transparent, #fb2f2f);
+  background: linear-gradient(to right, transparent, #36b8ab);
   animation: animate1 2s linear infinite;
 }
 .prices .container .pricesContainer .card span:nth-child(2) {
@@ -932,7 +932,7 @@ body {
   right: 0;
   height: 100%;
   width: 3px;
-  background: linear-gradient(to bottom, transparent, #fb2f2f);
+  background: linear-gradient(to bottom, transparent, #36b8ab);
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
 }
@@ -942,7 +942,7 @@ body {
   right: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to left, transparent, #fb2f2f);
+  background: linear-gradient(to left, transparent, #36b8ab);
   animation: animate3 2s linear infinite;
 }
 .prices .container .pricesContainer .card span:nth-child(4) {
@@ -951,7 +951,7 @@ body {
   left: 0;
   height: 100%;
   width: 3px;
-  background: linear-gradient(to top, transparent, #fb2f2f);
+  background: linear-gradient(to top, transparent, #36b8ab);
   animation: animate4 2s linear infinite;
   animation-delay: 1s;
 }
@@ -979,10 +979,10 @@ body {
   position: relative;
 }
 .questions .questionBox.active h3 {
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 .questions .questionBox.active h3 label::before {
-  color: #fb2f2f;
+  color: #36b8ab;
   transform: translateY(-50%) rotate(180deg);
 }
 .questions .questionBox.active .answer {
@@ -1001,7 +1001,7 @@ body {
   transition: 0.5s;
 }
 .questions .questionBox h3:hover {
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 .questions .questionBox h3 label::before {
   content: "↓";
@@ -1076,19 +1076,19 @@ footer .container .phone_mail_wrap .first_line .phone {
   font-weight: 700;
 }
 footer .container .phone_mail_wrap .first_line .phone:hover {
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 footer .container .phone_mail_wrap .first_line .slash {
   font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
   display: inline-block;
-  color: #fb2f2f;
+  color: #36b8ab;
 }
 footer .container .phone_mail_wrap .mail {
   font-size: 20px;
   line-height: 1.2;
-  color: #fb2f2f;
+  color: #36b8ab;
   margin-bottom: 30px;
 }
 footer .container .phone_mail_wrap .copyright_plus_insta p {
