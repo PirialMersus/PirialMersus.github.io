@@ -337,6 +337,7 @@ body {
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv {
   min-width: 200px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .reloading .container .soulReloadingBlock .advantagesBlock .advantageDiv .img {
   width: 300px;

@@ -145,16 +145,16 @@
   float: left;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   display: flex;
   justify-content: center;
 }
-.slider_container .slides_row .slide.alex {
-  background-position: center bottom;
+.slider_container .slides_row .slide.slide1 {
+  background-image: url(../img/4hands.jpg);
 }
-.slider_container .slides_row .slide.alexInna {
-  background-position: left center;
+.slider_container .slides_row .slide.slide2 {
+  background-image: url(../img/top.jpg);
 }
 .slider_container .slides_row .slide .sliderContent {
   display: inline-block;
@@ -255,6 +255,12 @@
   }
 }
 @media (max-width: 600px) {
+  .slider_container .slides_row .slide.slide1 {
+    background-image: url(../img/back600_1slide.jpg);
+  }
+  .slider_container .slides_row .slide.slide2 {
+    background-image: url(../img/backGr600_2slide.jpg);
+  }
   .slider_container .slides_row .slide .sliderContent h4 {
     font-size: 22px;
   }

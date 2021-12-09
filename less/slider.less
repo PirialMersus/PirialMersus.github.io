@@ -168,18 +168,22 @@
       float: left;
       height: 100vh;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
       display: flex;
       justify-content: center;
 
-      &.alex {
-        background-position: center bottom;
+      &.slide1 {
+        background-image: url(../img/4hands.jpg);
+        // background-position: center bottom;
+      }
+      &.slide2 {
+        background-image: url(../img/top.jpg);
       }
 
-      &.alexInna {
-        background-position: left center;
-      }
+      // &.alexInna {
+      //   background-position: right center;
+      // }
 
       .sliderContent {
         display: inline-block;
@@ -334,6 +338,13 @@
   .slider_container {
     .slides_row {
       .slide {
+        &.slide1 {
+          background-image: url(../img/back600_1slide.jpg);
+          // background-position: center bottom;
+        }
+        &.slide2 {
+          background-image: url(../img/backGr600_2slide.jpg);
+        }
         .sliderContent {
           h4 {
             font-size: 22px;
