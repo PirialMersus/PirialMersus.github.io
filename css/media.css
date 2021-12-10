@@ -408,6 +408,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .prices .container.scully {
+    animation: none;
+  }
   footer .container .phone_mail_wrap .first_line {
     font-size: 30px;
   }
