@@ -591,11 +591,10 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
-  opacity: 0;
-  transition: opacity 3s linear;
 }
 .gallery_section .container.scully {
-  opacity: 1;
+  animation: boxAppear 500ms linear;
+  animation-delay: 500ms;
 }
 .gallery_section .container .gallery {
   display: flex;
@@ -948,11 +947,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0;
-  transition: opacity 3s linear;
 }
 .questions.scully {
-  opacity: 1;
+  animation: boxAppear 500ms linear;
+  animation-delay: 500ms;
 }
 .questions h1 {
   text-align: center;
@@ -1025,17 +1023,12 @@ footer {
   overflow: hidden;
 }
 footer.scully .container {
-  transform: translateY(0);
-  opacity: 1;
+  animation: boxAppearFromBottom 500ms linear;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  transform: translateY(120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
 }
 footer .container .copyright img {
   margin: 0 auto;
@@ -1124,6 +1117,24 @@ footer .container .phone_mail_wrap .copyright_plus_insta .icons a img {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes boxAppearFromBottom {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes boxAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

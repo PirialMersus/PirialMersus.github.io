@@ -487,6 +487,9 @@
     padding-top: 50px;
 
     .container {
+      &.scully {
+        animation: none;
+      }
       .sheduleBox {
         .sheduleHeader {
           li {
@@ -537,6 +540,13 @@
     max-width: 100%;
   }
 
+  .gallery_section {
+    .container {
+      &.scully {
+        animation: none;
+      }
+    }
+  }
   .our_services {
     padding: 0px;
     background-color: #000;
@@ -602,9 +612,21 @@
       }
     }
   }
+  .reloading {
+    .container {
+      .soulReloadingBlock {
+        &.scully {
+          animation: none;
+        }
+      }
+    }
+  }
 
   .telegramSection {
     .telegramContent {
+      &.scully {
+        animation: none;
+      }
       .textContent {
         text-align: center;
       }
@@ -621,6 +643,11 @@
   }
 
   .our_projects {
+    .container {
+      &.scully {
+        animation: none;
+      }
+    }
     .our_projects_text {
       .btn_consultation {
         padding-left: 20px;
@@ -628,7 +655,13 @@
       }
     }
   }
-
+  .our_teachers_section {
+    .our_teachers {
+      &.scully {
+        animation: none;
+      }
+    }
+  }
   .prices {
     .container {
       &.scully {
@@ -639,24 +672,35 @@
       }
     }
   }
-
-  footer {
-    .container {
-      .phone_mail_wrap {
-        .first_line {
-          font-size: 30px;
-
-          .phone {
-            font-size: 30px;
-          }
-
-          .slash {
-            font-size: 30px;
-          }
+  .questions {
+    &.scully {
+      animation: none;
+    }
+  }
+  body {
+    footer {
+      &.scully {
+        .container {
+          animation: none;
         }
+      }
+      .container {
+        .phone_mail_wrap {
+          .first_line {
+            font-size: 30px;
 
-        .mail {
-          font-size: 18px;
+            .phone {
+              font-size: 30px;
+            }
+
+            .slash {
+              font-size: 30px;
+            }
+          }
+
+          .mail {
+            font-size: 18px;
+          }
         }
       }
     }

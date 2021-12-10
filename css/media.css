@@ -325,6 +325,9 @@
     padding: 0 20px;
     padding-top: 50px;
   }
+  .shedule .container.scully {
+    animation: none;
+  }
   .shedule .container .sheduleBox .sheduleHeader li {
     width: 90px;
   }
@@ -354,6 +357,9 @@
   }
   .our_services_text_column {
     max-width: 100%;
+  }
+  .gallery_section .container.scully {
+    animation: none;
   }
   .our_services {
     padding: 0px;
@@ -395,6 +401,12 @@
   .slider_container .wrp_text_appear #text_appear_3 > span {
     font-size: 38px;
   }
+  .reloading .container .soulReloadingBlock.scully {
+    animation: none;
+  }
+  .telegramSection .telegramContent.scully {
+    animation: none;
+  }
   .telegramSection .telegramContent .textContent {
     text-align: center;
   }
@@ -404,23 +416,35 @@
   .telegramSection .telegramContent .telegramIcon {
     max-width: 100px;
   }
+  .our_projects .container.scully {
+    animation: none;
+  }
   .our_projects .our_projects_text .btn_consultation {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .our_teachers_section .our_teachers.scully {
+    animation: none;
+  }
   .prices .container.scully {
     animation: none;
   }
-  footer .container .phone_mail_wrap .first_line {
+  .questions.scully {
+    animation: none;
+  }
+  body footer.scully .container {
+    animation: none;
+  }
+  body footer .container .phone_mail_wrap .first_line {
     font-size: 30px;
   }
-  footer .container .phone_mail_wrap .first_line .phone {
+  body footer .container .phone_mail_wrap .first_line .phone {
     font-size: 30px;
   }
-  footer .container .phone_mail_wrap .first_line .slash {
+  body footer .container .phone_mail_wrap .first_line .slash {
     font-size: 30px;
   }
-  footer .container .phone_mail_wrap .mail {
+  body footer .container .phone_mail_wrap .mail {
     font-size: 18px;
   }
 }
