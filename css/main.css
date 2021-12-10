@@ -2,7 +2,7 @@
   text-shadow: -1px 2px 5px #ffffff, 0px 0px 10px #ffffff, 1px 2px 12px #ffffff, 2px 3px 14px #ffffff, 4px 5px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff, 0px 0px 30px #ffffff, 0px 0px 30px #ffffff, 0px 0px 40px #ffffff;
 }
 .textShadowBlack {
-  text-shadow: 0px 0px 10px #000000, 0px 0px 12px #000000, 2px 3px 14px #000000, 0px 0px 15px #000000, 0px 0px 20px #000000, 0px 0px 25px #000000, 0px 0px 30px #000000, 0px 0px 30px #000000, 0px 0px 40px #000000;
+  text-shadow: 0px 0px 10px #4169e1, 0px 0px 12px #4169e1, 2px 3px 14px #6495ed, 0px 0px 15px #6495ed, 0px 0px 20px #87cefa, 0px 0px 25px #87cefa, 0px 0px 30px #87ceeb, 0px 0px 30px #87ceeb, 0px 0px 40px #87ceeb;
 }
 html,
 body {
@@ -311,14 +311,10 @@ body {
 }
 .reloading .container .soulReloadingBlock {
   margin-top: 100px;
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
 }
 .reloading .container .soulReloadingBlock.scully {
-  transform: translateX(0);
-  opacity: 1;
+  animation: boxAppearFromRight 500ms linear;
+  animation-delay: 500ms;
 }
 .reloading .container .soulReloadingBlock h2 {
   color: #fff;
@@ -326,7 +322,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 50px;
-  text-shadow: 0px 0px 10px #000000, 0px 0px 12px #000000, 2px 3px 14px #000000, 0px 0px 15px #000000, 0px 0px 20px #000000, 0px 0px 25px #000000, 0px 0px 30px #000000, 0px 0px 30px #000000, 0px 0px 40px #000000;
+  text-shadow: 0px 0px 10px #4169e1, 0px 0px 12px #4169e1, 2px 3px 14px #6495ed, 0px 0px 15px #6495ed, 0px 0px 20px #87cefa, 0px 0px 25px #87cefa, 0px 0px 30px #87ceeb, 0px 0px 30px #87ceeb, 0px 0px 40px #87ceeb;
 }
 .reloading .container .soulReloadingBlock .advantagesBlock {
   display: flex;
@@ -382,10 +378,6 @@ body {
   background-size: cover;
 }
 .telegramSection .telegramContent {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
   max-width: 1080px;
   display: flex;
   justify-content: center;
@@ -395,6 +387,8 @@ body {
 .telegramSection .telegramContent.scully {
   transform: translateX(0);
   opacity: 1;
+  animation: boxAppearFromLeft 500ms linear;
+  animation-delay: 500ms;
 }
 .telegramSection .telegramContent .textContent h2 {
   font-size: 2em;
@@ -420,15 +414,11 @@ body {
   padding-top: 50px;
   overflow: hidden;
 }
-.shedule .container {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
-}
 .shedule .container.scully {
   transform: translateX(0);
   opacity: 1;
+  animation: boxAppearFromRight 500ms linear;
+  animation-delay: 500ms;
 }
 .shedule .container h2 {
   text-align: center;
@@ -675,14 +665,10 @@ body {
   background: none no-repeat scroll right top transparent;
   background-image: url(../img/helen.jpg);
   background-size: 60% auto;
-  transform: translateX(-120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
 }
 .our_teachers_section .our_teachers.scully {
-  transform: translateX(0);
-  opacity: 1;
+  animation: boxAppearFromRight 500ms linear;
+  animation-delay: 500ms;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column {
   max-width: 40%;
@@ -778,14 +764,10 @@ body {
 .our_projects .container {
   display: flex;
   justify-content: space-between;
-  transform: translateX(-120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
 }
 .our_projects .container.scully {
-  transform: translateX(0);
-  opacity: 1;
+  animation: boxAppearFromLeft 500ms linear;
+  animation-delay: 500ms;
 }
 .our_projects .container .our_projects_text {
   max-width: 34%;
@@ -795,7 +777,7 @@ body {
   font-size: 40px;
   margin-bottom: 20px;
   color: #fff;
-  text-shadow: 0px 0px 10px #000000, 0px 0px 12px #000000, 2px 3px 14px #000000, 0px 0px 15px #000000, 0px 0px 20px #000000, 0px 0px 25px #000000, 0px 0px 30px #000000, 0px 0px 30px #000000, 0px 0px 40px #000000;
+  text-shadow: 0px 0px 10px #4169e1, 0px 0px 12px #4169e1, 2px 3px 14px #6495ed, 0px 0px 15px #6495ed, 0px 0px 20px #87cefa, 0px 0px 25px #87cefa, 0px 0px 30px #87ceeb, 0px 0px 30px #87ceeb, 0px 0px 40px #87ceeb;
 }
 .our_projects .container .our_projects_text .btn_consultation p {
   line-height: 40px;
@@ -808,15 +790,9 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
 }
-.prices .container {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.5s linear;
-  transition-delay: 500ms;
-}
 .prices .container.scully {
-  transform: translateX(0);
-  opacity: 1;
+  animation: boxAppearFromLeft 500ms linear;
+  animation-delay: 500ms;
 }
 .prices .container h1 {
   text-align: center;
@@ -843,6 +819,15 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   transition: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.prices .container .pricesContainer .card.card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backGroundPrices1.jpg");
+}
+.prices .container .pricesContainer .card.card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/back600_2slide.jpg");
 }
 .prices .container .pricesContainer .card:hover {
   box-shadow: 0 10px 30px rgb(0 0 0%);
@@ -864,12 +849,12 @@ body {
 .prices .container .pricesContainer .card:before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 3px;
-  bottom: 2px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
   width: 50%;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(10, 168, 195, 0.2);
 }
 .prices .container .pricesContainer .card .content {
   padding: 30px;
@@ -1115,6 +1100,26 @@ footer .container .phone_mail_wrap .copyright_plus_insta .icons a img {
 @keyframes logo_appear {
   0% {
     transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes boxAppearFromLeft {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes boxAppearFromRight {
+  0% {
+    transform: translateX(120%);
     opacity: 0;
   }
   100% {

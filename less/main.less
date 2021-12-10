@@ -391,14 +391,16 @@ body {
     .soulReloadingBlock {
       margin-top: 100px;
 
-      transform: translateX(120%);
-      opacity: 0;
-      transition: all 0.5s linear;
-      transition-delay: 500ms;
+      // transform: translateX(120%);
+      // opacity: 0;
+      // transition: all 0.5s linear;
+      // transition-delay: 500ms;
 
       &.scully {
-        transform: translateX(0);
-        opacity: 1;
+        // transform: translateX(0);
+        // opacity: 1;
+        animation: boxAppearFromRight 500ms linear;
+        animation-delay: 500ms;
       }
 
       h2 {
@@ -493,14 +495,16 @@ body {
   background-size: cover;
 
   .telegramContent {
-    transform: translateX(120%);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 500ms;
+    // transform: translateX(120%);
+    // opacity: 0;
+    // transition: all 0.5s linear;
+    // transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
+      animation: boxAppearFromLeft 500ms linear;
+      animation-delay: 500ms;
     }
 
     max-width: 1080px;
@@ -545,14 +549,16 @@ body {
   overflow: hidden;
 
   .container {
-    transform: translateX(120%);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 500ms;
+    // transform: translateX(120%);
+    // opacity: 0;
+    // transition: all 0.5s linear;
+    // transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
+      animation: boxAppearFromRight 500ms linear;
+      animation-delay: 500ms;
     }
 
     h2 {
@@ -931,14 +937,16 @@ body {
     background-image: url(../img/helen.jpg);
     background-size: 60% auto;
 
-    transform: translateX(-120%);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 500ms;
+    // transform: translateX(-120%);
+    // opacity: 0;
+    // transition: all 0.5s linear;
+    // transition-delay: 500ms;
 
     &.scully {
-      transform: translateX(0);
-      opacity: 1;
+      // transform: translateX(0);
+      // opacity: 1;
+      animation: boxAppearFromRight 500ms linear;
+      animation-delay: 500ms;
     }
 
     .our_teachers_text_column {
@@ -1060,14 +1068,16 @@ body {
     display: flex;
     justify-content: space-between;
 
-    transform: translateX(-120%);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 500ms;
+    // transform: translateX(-120%);
+    // opacity: 0;
+    // transition: all 0.5s linear;
+    // transition-delay: 500ms;
 
     &.scully {
-      transform: translateX(0);
-      opacity: 1;
+      // transform: translateX(0);
+      // opacity: 1;
+      animation: boxAppearFromLeft 500ms linear;
+      animation-delay: 500ms;
     }
 
     .our_projects_text {
@@ -1102,14 +1112,17 @@ body {
   overflow: hidden;
 
   .container {
-    transform: translateX(120%);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 500ms;
+    // transform: translateX(120%);
+    // opacity: 0;
+    // transition: all 0.5s linear;
+    // transition-delay: 500ms;
 
     &.scully {
-      transform: translateX(0);
-      opacity: 1;
+      // transform: translateX(0);
+      // opacity: 1;
+
+      animation: boxAppearFromLeft 500ms linear;
+      animation-delay: 500ms;
     }
 
     h1 {
@@ -1134,11 +1147,21 @@ body {
         background: #0c002b;
         display: flex;
         justify-content: center;
-        // align-items: center;
         margin: 30px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         overflow: hidden;
         transition: 0.5s;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &.card1 {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/backGroundPrices1.jpg");
+        }
+        &.card2 {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/back600_2slide.jpg");
+        }
 
         &:hover {
           box-shadow: 0 10px 30px rgb(0 0 0 / 90%);
@@ -1167,12 +1190,12 @@ body {
         &:before {
           content: "";
           position: absolute;
-          top: 2px;
-          left: 3px;
-          bottom: 2px;
+          top: 0px;
+          left: 0px;
+          bottom: 0px;
           width: 50%;
           pointer-events: none;
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(10, 168, 195, 0.2);
         }
 
         .content {
@@ -1483,6 +1506,29 @@ footer {
 @keyframes logo_appear {
   0% {
     transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes boxAppearFromLeft {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes boxAppearFromRight {
+  0% {
+    transform: translateX(120%);
     opacity: 0;
   }
 
