@@ -401,8 +401,9 @@
   .slider_container .wrp_text_appear #text_appear_3 > span {
     font-size: 38px;
   }
-  .reloading .container .soulReloadingBlock.scully {
-    animation: none;
+  .reloading .container .soulReloadingBlock {
+    transform: translateX(0);
+    opacity: 1;
   }
   .telegramSection .telegramContent.scully {
     animation: none;

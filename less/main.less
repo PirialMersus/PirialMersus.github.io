@@ -391,16 +391,14 @@ body {
     .soulReloadingBlock {
       margin-top: 100px;
 
-      // transform: translateX(120%);
-      // opacity: 0;
-      // transition: all 0.5s linear;
-      // transition-delay: 500ms;
+      transform: translateX(120%);
+      opacity: 0;
+      transition: all 0.5s linear;
+      transition-delay: 500ms;
 
       &.scully {
-        // transform: translateX(0);
-        // opacity: 1;
-        animation: boxAppearFromRight 500ms linear;
-        animation-delay: 500ms;
+        transform: translateX(0);
+        opacity: 1;
       }
 
       h2 {
@@ -495,16 +493,14 @@ body {
   background-size: cover;
 
   .telegramContent {
-    // transform: translateX(120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
-      animation: boxAppearFromLeft 500ms linear;
-      animation-delay: 500ms;
     }
 
     max-width: 1080px;
@@ -549,16 +545,14 @@ body {
   overflow: hidden;
 
   .container {
-    // transform: translateX(120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
       transform: translateX(0);
       opacity: 1;
-      animation: boxAppearFromRight 500ms linear;
-      animation-delay: 500ms;
     }
 
     h2 {
@@ -780,13 +774,11 @@ body {
     margin: auto;
     position: relative;
 
-    // opacity: 0;
-    // transition: opacity 3s linear;
+    opacity: 0;
+    transition: opacity 3s linear;
 
     &.scully {
-      // opacity: 1;
-      animation: boxAppear 500ms linear;
-      animation-delay: 500ms;
+      opacity: 1;
     }
 
     // h2 {
@@ -939,16 +931,14 @@ body {
     background-image: url(../img/helen.jpg);
     background-size: 60% auto;
 
-    // transform: translateX(-120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
-      // transform: translateX(0);
-      // opacity: 1;
-      animation: boxAppearFromRight 500ms linear;
-      animation-delay: 500ms;
+      transform: translateX(0);
+      opacity: 1;
     }
 
     .our_teachers_text_column {
@@ -1070,16 +1060,14 @@ body {
     display: flex;
     justify-content: space-between;
 
-    // transform: translateX(-120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
-      // transform: translateX(0);
-      // opacity: 1;
-      animation: boxAppearFromLeft 500ms linear;
-      animation-delay: 500ms;
+      transform: translateX(0);
+      opacity: 1;
     }
 
     .our_projects_text {
@@ -1114,17 +1102,14 @@ body {
   overflow: hidden;
 
   .container {
-    // transform: translateX(120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     &.scully {
-      // transform: translateX(0);
-      // opacity: 1;
-
-      animation: boxAppearFromLeft 500ms linear;
-      animation-delay: 500ms;
+      transform: translateX(0);
+      opacity: 1;
     }
 
     h1 {
@@ -1311,12 +1296,11 @@ body {
   background-position: center;
   background-size: cover;
 
-  // opacity: 0;
-  // transition: opacity 3s linear;
+  opacity: 0;
+  transition: opacity 3s linear;
 
   &.scully {
-    animation: boxAppear 500ms linear;
-    animation-delay: 500ms;
+    opacity: 1;
   }
 
   h1 {
@@ -1409,7 +1393,8 @@ footer {
 
   &.scully {
     .container {
-      animation: boxAppearFromBottom 500ms linear;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
@@ -1418,10 +1403,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 
-    // transform: translateY(120%);
-    // opacity: 0;
-    // transition: all 0.5s linear;
-    // transition-delay: 500ms;
+    transform: translateY(120%);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 500ms;
 
     .copyright {
       img {
@@ -1513,49 +1498,6 @@ footer {
 
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes boxAppearFromLeft {
-  0% {
-    transform: translateX(-120%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppearFromRight {
-  0% {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppearFromBottom {
-  0% {
-    transform: translateY(120%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
     opacity: 1;
   }
 }

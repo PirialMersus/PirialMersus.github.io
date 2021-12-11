@@ -311,10 +311,14 @@ body {
 }
 .reloading .container .soulReloadingBlock {
   margin-top: 100px;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
 }
 .reloading .container .soulReloadingBlock.scully {
-  animation: boxAppearFromRight 500ms linear;
-  animation-delay: 500ms;
+  transform: translateX(0);
+  opacity: 1;
 }
 .reloading .container .soulReloadingBlock h2 {
   color: #fff;
@@ -378,6 +382,10 @@ body {
   background-size: cover;
 }
 .telegramSection .telegramContent {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
   max-width: 1080px;
   display: flex;
   justify-content: center;
@@ -387,8 +395,6 @@ body {
 .telegramSection .telegramContent.scully {
   transform: translateX(0);
   opacity: 1;
-  animation: boxAppearFromLeft 500ms linear;
-  animation-delay: 500ms;
 }
 .telegramSection .telegramContent .textContent h2 {
   font-size: 2em;
@@ -414,11 +420,15 @@ body {
   padding-top: 50px;
   overflow: hidden;
 }
+.shedule .container {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
+}
 .shedule .container.scully {
   transform: translateX(0);
   opacity: 1;
-  animation: boxAppearFromRight 500ms linear;
-  animation-delay: 500ms;
 }
 .shedule .container h2 {
   text-align: center;
@@ -591,10 +601,11 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
+  opacity: 0;
+  transition: opacity 3s linear;
 }
 .gallery_section .container.scully {
-  animation: boxAppear 500ms linear;
-  animation-delay: 500ms;
+  opacity: 1;
 }
 .gallery_section .container .gallery {
   display: flex;
@@ -664,10 +675,14 @@ body {
   background: none no-repeat scroll right top transparent;
   background-image: url(../img/helen.jpg);
   background-size: 60% auto;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
 }
 .our_teachers_section .our_teachers.scully {
-  animation: boxAppearFromRight 500ms linear;
-  animation-delay: 500ms;
+  transform: translateX(0);
+  opacity: 1;
 }
 .our_teachers_section .our_teachers .our_teachers_text_column {
   max-width: 40%;
@@ -763,10 +778,14 @@ body {
 .our_projects .container {
   display: flex;
   justify-content: space-between;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
 }
 .our_projects .container.scully {
-  animation: boxAppearFromLeft 500ms linear;
-  animation-delay: 500ms;
+  transform: translateX(0);
+  opacity: 1;
 }
 .our_projects .container .our_projects_text {
   max-width: 34%;
@@ -789,9 +808,15 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
 }
+.prices .container {
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
+}
 .prices .container.scully {
-  animation: boxAppearFromLeft 500ms linear;
-  animation-delay: 500ms;
+  transform: translateX(0);
+  opacity: 1;
 }
 .prices .container h1 {
   text-align: center;
@@ -947,10 +972,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0;
+  transition: opacity 3s linear;
 }
 .questions.scully {
-  animation: boxAppear 500ms linear;
-  animation-delay: 500ms;
+  opacity: 1;
 }
 .questions h1 {
   text-align: center;
@@ -1023,12 +1049,17 @@ footer {
   overflow: hidden;
 }
 footer.scully .container {
-  animation: boxAppearFromBottom 500ms linear;
+  transform: translateY(0);
+  opacity: 1;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 500ms;
 }
 footer .container .copyright img {
   margin: 0 auto;
@@ -1097,44 +1128,6 @@ footer .container .phone_mail_wrap .copyright_plus_insta .icons a img {
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppearFromLeft {
-  0% {
-    transform: translateX(-120%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppearFromRight {
-  0% {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppearFromBottom {
-  0% {
-    transform: translateY(120%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes boxAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
