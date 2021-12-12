@@ -156,6 +156,12 @@
 .slider_container .slides_row .slide.slide2 {
   background-image: url(../img/top.jpg);
 }
+.slider_container .slides_row .slide.alexInna .sliderContent {
+  margin-top: 5%;
+}
+.slider_container .slides_row .slide.alexInna .sliderContent h3 {
+  margin-bottom: 20px;
+}
 .slider_container .slides_row .slide .sliderContent {
   display: inline-block;
   align-self: flex-start;

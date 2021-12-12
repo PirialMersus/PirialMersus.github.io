@@ -1,3 +1,9 @@
+.textShadowWhite {
+  text-shadow: -1px 2px 5px #ffffff, 0px 0px 10px #ffffff, 1px 2px 12px #ffffff, 2px 3px 14px #ffffff, 4px 5px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff, 0px 0px 30px #ffffff, 0px 0px 30px #ffffff, 0px 0px 40px #ffffff;
+}
+.textShadowBlack {
+  text-shadow: 0px 0px 10px #4169e1, 0px 0px 12px #4169e1, 2px 3px 14px #6495ed, 0px 0px 15px #6495ed, 0px 0px 20px #87cefa, 0px 0px 25px #87cefa, 0px 0px 30px #87ceeb, 0px 0px 30px #87ceeb, 0px 0px 40px #87ceeb;
+}
 @media (max-width: 1200px) {
   .drop_modal_form {
     padding: 10px;
@@ -147,7 +153,8 @@
     transform: translateY(40px) rotate(360deg) scale(3);
   }
   .telegramSection {
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .telegramSection .telegramContent {
     flex-wrap: wrap;
@@ -324,9 +331,11 @@
   .shedule {
     padding: 0 20px;
     padding-top: 50px;
+    background-color: #40cfff;
   }
-  .shedule .container.scully {
-    animation: none;
+  .shedule .container {
+    transform: translateX(0);
+    opacity: 1;
   }
   .shedule .container .sheduleBox .sheduleHeader li {
     width: 90px;
@@ -358,8 +367,11 @@
   .our_services_text_column {
     max-width: 100%;
   }
-  .gallery_section .container.scully {
-    animation: none;
+  .gallery_section {
+    background-color: #40cfff;
+  }
+  .gallery_section .container {
+    opacity: 1;
   }
   .our_services {
     padding: 0px;
@@ -401,12 +413,16 @@
   .slider_container .wrp_text_appear #text_appear_3 > span {
     font-size: 38px;
   }
+  .reloading {
+    background-color: #40cfff;
+  }
   .reloading .container .soulReloadingBlock {
     transform: translateX(0);
     opacity: 1;
   }
-  .telegramSection .telegramContent.scully {
-    animation: none;
+  .telegramSection .telegramContent {
+    transform: translateX(0);
+    opacity: 1;
   }
   .telegramSection .telegramContent .textContent {
     text-align: center;
@@ -417,24 +433,31 @@
   .telegramSection .telegramContent .telegramIcon {
     max-width: 100px;
   }
-  .our_projects .container.scully {
-    animation: none;
+  .our_projects .container {
+    transform: translateX(0);
+    opacity: 1;
   }
   .our_projects .our_projects_text .btn_consultation {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .our_teachers_section .our_teachers.scully {
-    animation: none;
+  .our_teachers_section .our_teachers {
+    transform: translateX(0);
+    opacity: 1;
   }
-  .prices .container.scully {
-    animation: none;
+  .prices {
+    background-color: #40cfff;
   }
-  .questions.scully {
-    animation: none;
+  .prices .container {
+    transform: translateX(0);
+    opacity: 1;
   }
-  body footer.scully .container {
-    animation: none;
+  .questions {
+    opacity: 1;
+  }
+  body footer .container {
+    transform: translateY(0);
+    opacity: 1;
   }
   body footer .container .phone_mail_wrap .first_line {
     font-size: 30px;

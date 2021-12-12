@@ -1,4 +1,5 @@
 // out: ../css/media.css
+@import "commonStyles.less";
 
 @media (max-width: 1200px) {
   //drop form
@@ -237,7 +238,8 @@
   }
 
   .telegramSection {
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     .telegramContent {
       flex-wrap: wrap;
@@ -485,11 +487,11 @@
   .shedule {
     padding: 0 20px;
     padding-top: 50px;
+    background-color: @skyBackgroundColor;
 
     .container {
-      &.scully {
-        animation: none;
-      }
+      transform: translateX(0);
+      opacity: 1;
       .sheduleBox {
         .sheduleHeader {
           li {
@@ -541,10 +543,9 @@
   }
 
   .gallery_section {
+    background-color: @skyBackgroundColor;
     .container {
-      &.scully {
-        animation: none;
-      }
+      opacity: 1;
     }
   }
   .our_services {
@@ -613,6 +614,7 @@
     }
   }
   .reloading {
+    background-color: @skyBackgroundColor;
     .container {
       .soulReloadingBlock {
         transform: translateX(0);
@@ -623,9 +625,8 @@
 
   .telegramSection {
     .telegramContent {
-      &.scully {
-        animation: none;
-      }
+      transform: translateX(0);
+      opacity: 1;
       .textContent {
         text-align: center;
       }
@@ -643,9 +644,8 @@
 
   .our_projects {
     .container {
-      &.scully {
-        animation: none;
-      }
+      transform: translateX(0);
+      opacity: 1;
     }
     .our_projects_text {
       .btn_consultation {
@@ -656,34 +656,25 @@
   }
   .our_teachers_section {
     .our_teachers {
-      &.scully {
-        animation: none;
-      }
+      transform: translateX(0);
+      opacity: 1;
     }
   }
   .prices {
+    background-color: @skyBackgroundColor;
     .container {
-      &.scully {
-        // transform: translateX(0);
-        // opacity: 1;
-
-        animation: none;
-      }
+      transform: translateX(0);
+      opacity: 1;
     }
   }
   .questions {
-    &.scully {
-      animation: none;
-    }
+    opacity: 1;
   }
   body {
     footer {
-      &.scully {
-        .container {
-          animation: none;
-        }
-      }
       .container {
+        transform: translateY(0);
+        opacity: 1;
         .phone_mail_wrap {
           .first_line {
             font-size: 30px;
