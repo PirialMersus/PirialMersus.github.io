@@ -206,6 +206,9 @@
   .site_header .btn_consultation p {
     font-size: 15px;
   }
+  .questions .questionBox > h3 {
+    font-size: 14px;
+  }
   .questions .questionBox .questionH3 {
     padding-right: 40px;
   }
