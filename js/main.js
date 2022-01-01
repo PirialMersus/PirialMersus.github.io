@@ -13,70 +13,72 @@ var $click_menu_wrp = $(".click_menu_wrp");
 var $questionH3 = document.getElementsByClassName("questionH3");
 var $btn_consultation_send_data = $(".btn_consultation_send_data");
 
-document.addEventListener("DOMContentLoaded", function () {
-  var script = document.createElement("script");
-  script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
-  script.onload = function () {
-    particlesJS("snow", {
-      particles: {
-        number: {
-          value: 100,
-          density: {
+if (section_width > 600) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
+    script.onload = function () {
+      particlesJS("snow", {
+        particles: {
+          number: {
+            value: 100,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          opacity: {
+            value: 0.7,
+            random: false,
+            anim: {
+              enable: false,
+            },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: {
+              enable: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
             enable: true,
-            value_area: 800,
+            speed: 5,
+            direction: "bottom",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: true,
+              rotateX: 300,
+              rotateY: 1200,
+            },
           },
         },
-        color: {
-          value: "#ffffff",
-        },
-        opacity: {
-          value: 0.7,
-          random: false,
-          anim: {
-            enable: false,
+        interactivity: {
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: false,
           },
         },
-        size: {
-          value: 5,
-          random: true,
-          anim: {
-            enable: false,
-          },
-        },
-        line_linked: {
-          enable: false,
-        },
-        move: {
-          enable: true,
-          speed: 5,
-          direction: "bottom",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: true,
-            rotateX: 300,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        events: {
-          onhover: {
-            enable: false,
-          },
-          onclick: {
-            enable: false,
-          },
-          resize: false,
-        },
-      },
-      retina_detect: true,
-    });
-  };
-  document.head.append(script);
-});
+        retina_detect: true,
+      });
+    };
+    document.head.append(script);
+  });
+}
 
 function telValidation(tel) {
   const regEx = /(\+)?(\D{0,2}\d){10,13}/im;
