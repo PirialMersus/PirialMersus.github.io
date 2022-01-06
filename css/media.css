@@ -141,13 +141,14 @@
   }
   .site_header ul li a {
     padding-right: 7px;
+    font-size: 16px;
   }
   .site_header .btn_consultation {
     padding-left: 40px;
     padding-right: 40px;
   }
   .site_header .site_logo {
-    margin-left: 5%;
+    margin-left: 0;
   }
   .site_header .site_logo:hover {
     transform: translateY(40px) rotate(360deg) scale(3);
