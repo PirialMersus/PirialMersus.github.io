@@ -589,7 +589,7 @@ body {
 
         li {
           list-style: none;
-          width: 150px;
+          width: 200px;
           cursor: pointer;
           display: flex;
           justify-content: center;
@@ -616,11 +616,12 @@ body {
 
           &.backgroundSlide {
             position: absolute;
-            width: 150px;
+            width: 200px;
             height: 100%;
             top: 0;
             left: 0;
-            background-color: @btns_color;
+            // background-color: @btns_color;
+            background-color: green;
             transition: 0.5s;
             opacity: 0;
           }
@@ -631,14 +632,15 @@ body {
           }
 
           &:nth-child(2).active ~ .backgroundSlide {
-            left: 150px;
+            left: 200px;
             opacity: 1;
+            background-color: red;
           }
 
-          &:nth-child(3).active ~ .backgroundSlide {
-            left: 300px;
-            opacity: 1;
-          }
+          // &:nth-child(3).active ~ .backgroundSlide {
+          //   left: 300px;
+          //   opacity: 1;
+          // }
         }
       }
 
@@ -672,16 +674,30 @@ body {
 
             h2 {
               font-size: 22px;
-              color: #000;
+              color: green;
               margin-bottom: 20px;
               font-weight: 700;
+              &.green {
+                color: green;
+              }
+              &.red {
+                color: red;
+              }
             }
 
             p {
               color: #000;
               max-width: 450px;
+              line-height: 2;
               .textShadowWhite;
+              // background-color: whitesmoke;
               font-weight: 700;
+              .green {
+                color: green;
+              }
+              .red {
+                color: red;
+              }
             }
           }
         }

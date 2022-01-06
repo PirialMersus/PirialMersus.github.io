@@ -498,10 +498,10 @@
       .sheduleBox {
         .sheduleHeader {
           li {
-            width: 90px;
+            width: 150px;
 
             &.backgroundSlide {
-              width: 90px;
+              width: 150px;
             }
 
             &:nth-child(1).active ~ .backgroundSlide {
@@ -509,12 +509,12 @@
             }
 
             &:nth-child(2).active ~ .backgroundSlide {
-              left: 90px;
+              left: 150px;
             }
 
-            &:nth-child(3).active ~ .backgroundSlide {
-              left: 180px;
-            }
+            // &:nth-child(3).active ~ .backgroundSlide {
+            //   left: 180px;
+            // }
           }
         }
 
@@ -711,6 +711,29 @@
       .arrow {
         svg {
           max-width: 50px;
+        }
+      }
+    }
+  }
+  .shedule {
+    .container {
+      .sheduleBox {
+        .sheduleHeader {
+          li {
+            width: 110px;
+
+            &.backgroundSlide {
+              width: 110px;
+            }
+
+            &:nth-child(1).active ~ .backgroundSlide {
+              left: 0;
+            }
+
+            &:nth-child(2).active ~ .backgroundSlide {
+              left: 110px;
+            }
+          }
         }
       }
     }

@@ -341,19 +341,16 @@
     opacity: 1;
   }
   .shedule .container .sheduleBox .sheduleHeader li {
-    width: 90px;
+    width: 150px;
   }
   .shedule .container .sheduleBox .sheduleHeader li.backgroundSlide {
-    width: 90px;
+    width: 150px;
   }
   .shedule .container .sheduleBox .sheduleHeader li:nth-child(1).active ~ .backgroundSlide {
     left: 0;
   }
   .shedule .container .sheduleBox .sheduleHeader li:nth-child(2).active ~ .backgroundSlide {
-    left: 90px;
-  }
-  .shedule .container .sheduleBox .sheduleHeader li:nth-child(3).active ~ .backgroundSlide {
-    left: 180px;
+    left: 150px;
   }
   .shedule .container .sheduleBox .sheduleContent {
     height: 500px;
@@ -485,5 +482,17 @@
   }
   .telegramSection .telegramContent .arrow svg {
     max-width: 50px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li {
+    width: 110px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li.backgroundSlide {
+    width: 110px;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li:nth-child(1).active ~ .backgroundSlide {
+    left: 0;
+  }
+  .shedule .container .sheduleBox .sheduleHeader li:nth-child(2).active ~ .backgroundSlide {
+    left: 110px;
   }
 }
